@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+
+    "safechef": "https://credential-handler.github.io/vc-examples/safechef/#",
+
+    "FoodSafetyCertificationCredential": "safechef:FoodSafetyCertificationCredential",
+
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "image": {
+      "@id": "http://schema.org/image",
+      "@type": "@id"
+    },
+
+    "certificateNo": {
+      "@id": "safechef:certificateNo",
+      "@type": "xsd:string"
+    },
+    "examDate": {
+      "@id": "safechef:examDate",
+      "@type": "xsd:dateTime"
+    },
+    "certificateNo": {
+      "@id": "safechef:certificateNo",
+      "@type": "xsd:string"
+    }
+  }
+}
