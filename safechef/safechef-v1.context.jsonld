@@ -3,15 +3,19 @@
     "@protected": true,
 
     "FoodSafetyCertificationCredential": {
-      "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertificationCredential",
-      "@context": {
-        "name": "http://schema.org/name",
-        "description": "http://schema.org/description",
-        "image": {
-          "@id": "http://schema.org/image",
-          "@type": "@id"
-        },
+      "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertificationCredential"
+    },
 
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "image": "http://schema.org/image",
+    "certification": {
+      "@id": "https://credential-handler.github.io/vc-examples/safechef/#certification"
+    },
+
+    "FoodSafetyCertification": {
+      "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertification",
+      "@context": {
         "certificateNo": {
           "@id": "https://credential-handler.github.io/vc-examples/safechef/#certificateNo",
           "@type": "xsd:string"
