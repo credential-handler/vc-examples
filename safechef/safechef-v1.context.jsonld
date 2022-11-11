@@ -16,6 +16,10 @@
     "FoodSafetyCertification": {
       "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertification",
       "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+
         "certificateNo": {
           "@id": "https://credential-handler.github.io/vc-examples/safechef/#certificateNo",
           "@type": "xsd:string"
