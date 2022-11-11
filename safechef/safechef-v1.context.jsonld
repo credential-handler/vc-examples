@@ -6,9 +6,9 @@
       "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertificationCredential"
     },
 
-    "name": "http://schema.org/name",
-    "description": "http://schema.org/description",
-    "image": "http://schema.org/image",
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
+    "image": "https://schema.org/image",
     "certification": {
       "@id": "https://credential-handler.github.io/vc-examples/safechef/#certification"
     },
