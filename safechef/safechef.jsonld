@@ -1,5 +1,5 @@
 {
-  "@context":[
+  "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://testing-json-ld.pages.dev/safechef-v1.context.jsonld"
   ],
@@ -13,9 +13,9 @@
     "name": "Jane Doe",
     "certification": {
       "@type": "FoodSafetyCertification",
-      "certificateNo": "8460c404-c0a5-4653-aeae-44d03a1a7334",
+      "certificateId": "urn:uuid:8460c404-c0a5-4653-aeae-44d03a1a7334",
       "examDate": "2011-11-11",
-      "testCode": "df52b514-e13a-42b7-8030-3f928a27d167"
+      "testCode": "urn:uuid:df52b514-e13a-42b7-8030-3f928a27d167"
     }
   },
   "issuer": {
