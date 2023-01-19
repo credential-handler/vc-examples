@@ -3,33 +3,33 @@
     "@protected": true,
 
     "FoodSafetyCertificationCredential": {
-      "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertificationCredential"
+      "@id": "https://credential-handler.github.io/vc-examples/safechef#FoodSafetyCertificationCredential"
     },
 
     "name": "https://schema.org/name",
     "description": "https://schema.org/description",
     "image": "https://schema.org/image",
     "certification": {
-      "@id": "https://credential-handler.github.io/vc-examples/safechef/#certification"
+      "@id": "https://credential-handler.github.io/vc-examples/safechef#certification"
     },
 
     "FoodSafetyCertification": {
-      "@id": "https://credential-handler.github.io/vc-examples/safechef/#FoodSafetyCertification",
+      "@id": "https://credential-handler.github.io/vc-examples/safechef#FoodSafetyCertification",
       "@context": {
         "@protected": true,
         "id": "@id",
         "type": "@type",
 
-        "certificateNo": {
-          "@id": "https://credential-handler.github.io/vc-examples/safechef/#certificateNo",
+        "certificateId": {
+          "@id": "https://credential-handler.github.io/vc-examples/safechef#certificateId",
           "@type": "xsd:string"
         },
         "examDate": {
-          "@id": "https://credential-handler.github.io/vc-examples/safechef/#examDate",
+          "@id": "https://credential-handler.github.io/vc-examples/safechef#examDate",
           "@type": "xsd:dateTime"
         },
         "testCode": {
-          "@id": "https://credential-handler.github.io/vc-examples/safechef/#testCode",
+          "@id": "https://credential-handler.github.io/vc-examples/safechef#testCode",
           "@type": "xsd:string"
         }
       }
