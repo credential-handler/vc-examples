@@ -1,5 +1,5 @@
 {
-  "name": "@digitalbazaar/vc-examples",
+  "name": "vc-examples",
   "version": "0.0.1",
   "description": "Verifiable Credentials for the CHAPI Issuer Playground",
   "type": "module",
