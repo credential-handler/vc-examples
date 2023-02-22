@@ -12,7 +12,8 @@
 
 ## Background
 
-Credentials added to this package are to be used with CHAPI Issuer Playground tool.
+Credentials added to this package are to be used with CHAPI Issuer Playground
+tool.
 
 ## Install
 
