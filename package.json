@@ -1,0 +1,27 @@
+{
+  "name": "@digitalbazaar/vc-examples",
+  "version": "0.0.1",
+  "description": "Verifiable Credentials for the CHAPI Issuer Playground",
+  "type": "module",
+  "main": "./credentials/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "credentials/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/credential-handler/vc-examples"
+  },
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com/"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/credential-handler/vc-examples/issues"
+  },
+  "homepage": "https://github.com/credential-handler/vc-examples#readme"
+}
