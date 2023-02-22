@@ -1,0 +1,9 @@
+*.log
+*.sw[nop]
+*~
+.cache
+.settings
+.vscode
+TAGS
+dist
+node_modules
