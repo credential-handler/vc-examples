@@ -1,4 +1,4 @@
-#  @digitalbazaar/vc-examples _(@digitalbazaar/vc-examples)_
+#  vc-examples _(vc-examples)_
 
 > Example Verifiable Credentials for the CHAPI Issuer Playground.
 

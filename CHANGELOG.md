@@ -1,4 +1,4 @@
-# @digitalbazaar/vc-examples Changelog
+# vc-examples Changelog
 
 ## 1.0.0 - TBD
 
