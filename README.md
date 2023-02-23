@@ -1,4 +1,4 @@
-#  vc-examples _(vc-examples)_
+#  @credential-handler/vc-examples _(@credential-handler/vc-examples)_
 
 > Example Verifiable Credentials for the CHAPI Issuer Playground.
 
@@ -37,7 +37,7 @@ Please add or update credentials in the `./credenitals` dir.
 
 ### Get the path to credentials directory
 ```
-import {credentialsDir} from 'vc-examples';
+import {credentialsDir} from '@credential-handler/vc-examples';
 ```
 
 ## Contribute
