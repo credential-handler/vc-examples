@@ -32,7 +32,13 @@ npm install
 ## Usage
 
 ### Add/Update a Verifiable Credential
+
 Please add or update credentials in the `./credenitals` dir.
+
+### Get the path to credentials directory
+```
+import {credentialsDir} from 'vc-examples';
+```
 
 ## Contribute
 
