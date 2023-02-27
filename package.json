@@ -5,6 +5,8 @@
   "type": "module",
   "main": "./lib/index.js",
   "scripts": {
+    "test": "npm run lint && npm run test-node",
+    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 10000 test/*.spec.js",
     "lint": "eslint ."
   },
   "files": [
@@ -12,10 +14,13 @@
     "lib/*.js"
   ],
   "devDependencies": {
+    "chai": "^4.3.7",
+    "cross-env": "^7.0.3",
     "eslint": "^8.34.0",
     "eslint-config-digitalbazaar": "^4.2.0",
     "eslint-plugin-jsdoc": "^40.0.0",
-    "eslint-plugin-unicorn": "^45.0.2"
+    "eslint-plugin-unicorn": "^45.0.2",
+    "mocha": "^10.2.0"
   },
   "repository": {
     "type": "git",
