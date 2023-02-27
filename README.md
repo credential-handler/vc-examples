@@ -29,11 +29,20 @@ cd vc-examples
 npm install
 ```
 
+To run test:
+
+```
+npm test
+```
+
 ## Usage
 
 ### Add/Update a Verifiable Credential
 
-Please add or update credentials in the `./credenitals` dir.
+Please add or update credentials in the `./credenitals` dir. When adding new
+credential, make sure the directory name matches the credential name and
+that they are camel-cased. The directory should contain a logo image (with
+`.jpg` or `.png` file extensions) and a `.json` file containing the credential.
 
 ### Get the path to credentials directory
 ```
