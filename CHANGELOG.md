@@ -4,9 +4,11 @@
 
 ### Added
 - Add test.
+- Add image for `jff`.
 
 ### Changed
 - Update `Usage` section in `README.md`.
+- Update names of `.json` files containing credentials to `credential.json`.
 
 ## 1.0.0 - 2023-02-23
 
