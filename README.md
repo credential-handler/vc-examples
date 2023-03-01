@@ -40,9 +40,9 @@ npm test
 ### Add/Update a Verifiable Credential
 
 Please add or update credentials in the `./credenitals` dir. When adding new
-credential, make sure the directory name matches the credential name and
-that they are camel-cased. The directory should contain a logo image (with
-`.jpg` or `.png` file extensions) and a `.json` file containing the credential.
+credential, make sure the directory name is camel-cased. The directory should
+contain a logo image (with `.jpg` or `.png` file extensions) and the credential
+in the `credential.json` file.
 
 ### Get the path to credentials directory
 ```
