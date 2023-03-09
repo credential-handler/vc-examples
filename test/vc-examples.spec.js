@@ -11,9 +11,6 @@ describe('credentialsDir', () => {
   it('should exist path to credentials directory.', async () => {
     should.exist(credentialsDir);
     credentialsDir.should.be.a('string');
-
-    const exists = fs.existsSync(credentialsDir);
-
-    exists.should.equal(true);
+    fs.existsSync(credentialsDir).should.be.true;
   });
 });
