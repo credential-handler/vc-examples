@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 2.0.0 - 2023-02-TBD
+## 2.0.0 - 2023-03-09
 
 ### Added
 - Add test.
