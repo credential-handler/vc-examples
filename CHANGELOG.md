@@ -7,9 +7,9 @@
 - Add image for `jff`.
 
 ### Changed
-- Update `Usage` section in `README.md`.
-- **Breaking**: Update names of `.json` files containing credentials to
+- **BREAKING**: Update names of `.json` files containing credentials to
   `credential.json`.
+- Update `Usage` section in `README.md`.
 
 ## 1.0.0 - 2023-02-23
 
