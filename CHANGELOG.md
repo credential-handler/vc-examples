@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 2.1.0 - 2023-03-TBD
+## 2.1.0 - 2023-03-15
 
 ### Added
 - Add new `Safe Chef` VC example.
