@@ -1,5 +1,14 @@
 # vc-examples Changelog
 
+## 3.0.0 - 2023-TBD
+
+### Added
+- Add context files for `movieTicket`, `alumni` and `safechef` credentials.
+
+### Changed
+- **BREAKING**: Update context URLs for `movieTicket`, `alumni` and `safechef`
+  credentials.
+
 ## 2.1.0 - 2023-03-15
 
 ### Added
