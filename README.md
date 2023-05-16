@@ -43,8 +43,8 @@ Please add or update credentials in the `./credenitals` dir. When adding new
 credential, make sure the directory name is camel-cased. The directory should
 contain a logo image (with `.jpg` or `.png` file extensions) and the credential
 in the `credential.json` file. Additionally, you can also add a file for the
-credential context (for example see - `./credentials/movieTicket`) if you want
-to host the contexts in `https://playground.chapi.io/`.
+credential context (for example see - `./contexts/alumni-context-v1.json`) if
+you want to host the contexts in `https://contexts.vcplayground.org/`.
 
 ### Get the path to credentials directory
 ```
