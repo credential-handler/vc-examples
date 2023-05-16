@@ -1,5 +1,14 @@
 # vc-examples Changelog
 
+## 4.0.0 - 2023-TBD
+
+### Added
+- Move context files into `contexts` dir and export its path.
+
+### Changed
+- **BREAKING**: Update context URLs for `movieTicket`, `alumni` and `safechef`
+  credentials.
+
 ## 3.0.0 - 2023-05-19
 
 ### Added
