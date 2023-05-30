@@ -28,7 +28,7 @@
     "url": "https://github.com/credential-handler/vc-examples"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "author": {
     "name": "Digital Bazaar, Inc.",

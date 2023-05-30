@@ -8,6 +8,7 @@
 ### Changed
 - **BREAKING**: Update context URLs for `movieTicket`, `alumni` and `safechef`
   credentials.
+- **BREAKING**: Drop support for node <= 16.x. Node.js 18+ is required.
 
 ## 3.0.0 - 2023-05-19
 
