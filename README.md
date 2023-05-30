@@ -17,7 +17,7 @@ tool.
 
 ## Install
 
-- Node.js 16+ is required.
+- Node.js 18+ is required.
 
 ### Development
 
