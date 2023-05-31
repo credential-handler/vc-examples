@@ -45,7 +45,7 @@ contain a logo image (with `.jpg` or `.png` file extensions) and the credential
 in the `credential.json` file. Additionally, you can also add a file for the
 credential context in the `./contexts` dir (for example see -
 `./contexts/alumni-context-v1.json`) if you want to host the contexts in
-[`@credential-handler/chapi-playground-contexts-server`](https://github.com/credential-handler/chapi-playground-contexts-server).
+[`@credential-handler/vc-playground-contexts-server`](https://github.com/credential-handler/vc-playground-contexts-server).
 
 ### Get the path to credentials directory
 ```
