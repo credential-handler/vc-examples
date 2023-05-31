@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 4.0.0 - 2023-TBD
+## 4.0.0 - 2023-05-31
 
 ### Added
 - Move context files into `contexts` dir and export its path.
