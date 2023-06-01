@@ -37,15 +37,45 @@ npm test
 
 ## Usage
 
-### Add/Update a Verifiable Credential
+### Add / Update a Verifiable Credential
 
-Please add or update credentials in the `./credenitals` dir. When adding new
-credential, make sure the directory name is camel-cased. The directory should
-contain a logo image (with `.jpg` or `.png` file extensions) and the credential
-in the `credential.json` file. Additionally, you can also add a file for the
-credential context in the `./contexts` dir (for example see -
-`./contexts/alumni/v1.json`) if you want to host the contexts in
-[`@credential-handler/vc-playground-contexts-server`](https://github.com/credential-handler/vc-playground-contexts-server).
+To add or update credentials in the `./credentials` directory:
+
+1. Within the `./credentials` directory, create a new directory for the
+credential. Make sure to use camel case for the directory name. For instance,
+if you're adding a credential for "University Degree" the directory name
+should be `universityDegree`.
+2. Inside the newly created credential directory, add a `credential.json` file.
+This file should contain all the necessary information for the credential,
+including the issuer, credential subject, and other relevant data.
+3. Additionally, place a logo `image` file for the credential in the
+corresponding directory. The image file should be in either JPG or PNG format.
+
+### Add / Update a Credential Context
+
+To optionally add or update contexts in the `./contexts` directory:
+
+1. If you wish to include a context for a credential, for instance, if you want
+to add a context for the "University Degree" credential, create a file called
+`universityDegree-context-v1.json` in the `./contexts` directory. This file
+should contain the JSON-LD context definition for the credential.
+2. Please note that once a context is created, it becomes locked and cannot be
+modified. If you want to update or make changes to a context, you must create a
+new context file with a new version. For instance, if you want to update the
+context for the "University Degree" credential, create a new file named
+`universityDegree-context-v2.json` containing the updated JSON-LD context
+definition. The previous version, `universityDegree-context-v1.json`, should be
+retained in the directory without any modifications.
+3. After creating the context in the `vc-examples` repository, it is important
+to update and deploy the contexts server
+`@credential-handler/vc-playground-contexts-server`. This ensures that the
+latest version of `@credential-handler/vc-examples` is used by the server,
+allowing the newly created context to be accessible.
+4. Please note that for the contexts created in the `./contexts` directory, the
+context URL should be of the following format -
+`https://contexts.vcplyaground.org/examples/` base URL (which is the domain
+where the contexts are hosted.) followed by name of the context file , for
+example `universityDegree-context-v1.json`.
 
 ### Get the path to credentials directory
 ```
