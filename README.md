@@ -44,7 +44,7 @@ credential, make sure the directory name is camel-cased. The directory should
 contain a logo image (with `.jpg` or `.png` file extensions) and the credential
 in the `credential.json` file. Additionally, you can also add a file for the
 credential context in the `./contexts` dir (for example see -
-`./contexts/alumni-context-v1.json`) if you want to host the contexts in
+`./contexts/alumni/v1.json`) if you want to host the contexts in
 [`@credential-handler/vc-playground-contexts-server`](https://github.com/credential-handler/vc-playground-contexts-server).
 
 ### Get the path to credentials directory
