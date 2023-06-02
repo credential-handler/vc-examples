@@ -3,7 +3,7 @@
     "@protected": true,
 
     "FoodSafetyCertificationCredential": {
-      "@id": "https://playground.chapi.io/examples/safeChef/vocab#FoodSafetyCertificationCredential"
+      "@id": "https://contexts.vcplayground.org/examples/safe-chef/vocab#FoodSafetyCertificationCredential"
     },
 
     "name": "https://schema.org/name",
