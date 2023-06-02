@@ -54,20 +54,20 @@ format.
 
 To optionally add or update contexts in the `./contexts` directory:
 
-1. If you wish to include a context for a credential, for instance, if you want
-to add a context for the "University Degree" credential, create a file called
-`universityDegree-context-v1.json` in the `./contexts` directory. This file
-should contain the JSON-LD context definition for the credential.
+1. If you wish to include a context for a credential, create a new directory
+for the context in the `./contexts` directory. Make sure to use snake case for
+the directory name. It should contain a file `v1.json` that should contain the
+JSON-LD context definition for the credential.
 2. Please note that once a context is created, it becomes locked and cannot be
 modified. If you want to update or make changes to a context, you must create a
-new context file with a new version. For instance, if you want to update the
-context for the "University Degree" credential, create a new file named
-`universityDegree-context-v2.json` containing the updated JSON-LD context
-definition. The previous version, `universityDegree-context-v1.json`, should be
-retained in the directory without any modifications.
+new context file with a new version within the context directory. For instance,
+if you want to update the context for the "Alumni" credential, create a new file
+named `v2.json` containing the updated JSON-LD context definition within
+`./contexts/alumni`. The previous version,`v1.json`, should be retained in the
+directory without any modifications.
 3. Please note that for the contexts created in the `./contexts` directory, the
 context URL should be of the following format -
-`https://contexts.vcplyaground.org/examples/movie-ticket/v1.json`.
+`https://contexts.vcplyaground.org/examples/foo/v1.json`.
 
 ### Get the path to credentials directory
 ```
