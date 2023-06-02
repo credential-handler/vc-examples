@@ -1,6 +1,9 @@
 # vc-examples Changelog
 
-## 4.0.1 - 2023-06-TBD
+## 5.0.0 - 2023-06-TBD
+
+### Changed
+- **BREAKING**: Rename `safeChef` to `foodSafetyCertification`.
 
 ### Fixed
 - Update context URLs to a cleaner format
