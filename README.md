@@ -42,14 +42,13 @@ npm test
 To add or update credentials in the `./credentials` directory:
 
 1. Within the `./credentials` directory, create a new directory for the
-credential. Make sure to use camel case for the directory name. For instance,
-if you're adding a credential for "University Degree" the directory name
-should be `universityDegree`.
+credential. Make sure to use camel case for the directory name.
 2. Inside the newly created credential directory, add a `credential.json` file.
 This file should contain all the necessary information for the credential,
 including the issuer, credential subject, and other relevant data.
 3. Additionally, place a logo `image` file for the credential in the
-corresponding directory. The image file should be in either JPG or PNG format.
+corresponding directory. The image file should be in either `JPG` or `PNG`
+format.
 
 ### Add / Update a Credential Context
 
@@ -66,16 +65,9 @@ context for the "University Degree" credential, create a new file named
 `universityDegree-context-v2.json` containing the updated JSON-LD context
 definition. The previous version, `universityDegree-context-v1.json`, should be
 retained in the directory without any modifications.
-3. After creating the context in the `vc-examples` repository, it is important
-to update and deploy the contexts server
-`@credential-handler/vc-playground-contexts-server`. This ensures that the
-latest version of `@credential-handler/vc-examples` is used by the server,
-allowing the newly created context to be accessible.
-4. Please note that for the contexts created in the `./contexts` directory, the
+3. Please note that for the contexts created in the `./contexts` directory, the
 context URL should be of the following format -
-`https://contexts.vcplyaground.org/examples/` base URL (which is the domain
-where the contexts are hosted.) followed by name of the context file , for
-example `universityDegree-context-v1.json`.
+`https://contexts.vcplyaground.org/examples/movie-ticket/v1.json`.
 
 ### Get the path to credentials directory
 ```
