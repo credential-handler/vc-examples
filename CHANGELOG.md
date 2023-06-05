@@ -2,9 +2,6 @@
 
 ## 5.0.0 - 2023-06-TBD
 
-### Changed
-- **BREAKING**: Rename `safeChef` to `foodSafetyCertification`.
-
 ### Fixed
 - Update context URLs to a cleaner format
   `https://contexts.vcplayground.org/examples/foo/v1.json`.
