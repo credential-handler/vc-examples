@@ -1,7 +1,8 @@
 {
   "@context": {
     "@protected": true,
-
+    "id": "@id",
+    "type": "@type",
     "FoodSafetyCertificationCredential": {
       "@id": "https://contexts.vcplayground.org/examples/food-safety-certification/vocab#FoodSafetyCertificationCredential"
     },
@@ -21,16 +22,14 @@
         "type": "@type",
 
         "certificateId": {
-          "@id": "https://contexts.vcplayground.org/examples/food-safety-certification#certificateId",
-          "@type": "xsd:string"
+          "@id": "https://contexts.vcplayground.org/examples/food-safety-certification#certificateId"
         },
         "examDate": {
           "@id": "https://contexts.vcplayground.org/examples/food-safety-certification#examDate",
           "@type": "xsd:dateTime"
         },
         "testCode": {
-          "@id": "https://contexts.vcplayground.org/examples/food-safety-certification#testCode",
-          "@type": "xsd:string"
+          "@id": "https://contexts.vcplayground.org/examples/food-safety-certification#testCode"
         }
       }
     }
