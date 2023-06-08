@@ -42,7 +42,7 @@ npm test
 To add or update credentials in the `./credentials` directory:
 
 1. Within the `./credentials` directory, create a new directory for the
-credential. Make sure to use camel case for the directory name.
+credential. Make sure to use kebab case for the directory name.
 2. Inside the newly created credential directory, add a `credential.json` file.
 This file should contain all the necessary information for the credential,
 including the issuer, credential subject, and other relevant data.
@@ -55,7 +55,7 @@ format.
 To optionally add or update contexts in the `./contexts` directory:
 
 1. If you wish to include a context for a credential, create a new directory
-for the context in the `./contexts` directory. Make sure to use snake case for
+for the context in the `./contexts` directory. Make sure to use kebab case for
 the directory name. It should contain a file `v1.json` that should contain the
 JSON-LD context definition for the credential.
 2. Please note that once a context is created, it becomes locked and cannot be
