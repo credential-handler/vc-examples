@@ -2,9 +2,13 @@
 
 ## 5.0.0 - 2023-06-TBD
 
+### Changed
+- **BREAKING**: Update dir names for `movieTicket`, `introToChapi` and
+  `safechef` to kebab case.
+
 ### Fixed
 - Update context URLs to a cleaner format
-  `https://contexts.vcplayground.org/examples/foo/v1.json`.
+  `https://contexts.vcplayground.org/examples/foo-bar/v1.json`.
 - Fix vocab URLs.
 
 ## 4.0.0 - 2023-05-31
