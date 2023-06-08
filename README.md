@@ -65,9 +65,9 @@ if you want to update the context for the "Alumni" credential, create a new file
 named `v2.json` containing the updated JSON-LD context definition within
 `./contexts/alumni`. The previous version,`v1.json`, should be retained in the
 directory without any modifications.
-3. Please note that for the contexts created in the `./contexts` directory, the
-context URL should be of the following format -
-`https://contexts.vcplyaground.org/examples/foo/v1.json`.
+3. Please make sure that the context URLs for the contexts created in the
+`./contexts` directory follow the format:
+`https://contexts.vcplyaground.org/examples/foo-bar/v1.json`.
 
 ### Get the path to credentials directory
 ```
