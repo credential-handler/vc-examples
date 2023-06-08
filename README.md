@@ -45,10 +45,11 @@ To add or update credentials in the `./credentials` directory:
 credential. Make sure to use kebab case for the directory name.
 2. Inside the newly created credential directory, add a `credential.json` file.
 This file should contain all the necessary information for the credential,
-including the issuer, credential subject, and other relevant data.
+including the issuer, credential subject, and other relevant data, for example
+`./credentials/movie-ticket/credential.json`.
 3. Additionally, place a logo `image` file for the credential in the
 corresponding directory. The image file should be in either `JPG` or `PNG`
-format.
+format, for example `./credentials/movie-ticket/image.png`.
 
 ### Add / Update a Credential Context
 
@@ -57,7 +58,8 @@ To optionally add or update contexts in the `./contexts` directory:
 1. If you wish to include a context for a credential, create a new directory
 for the context in the `./contexts` directory. Make sure to use kebab case for
 the directory name. It should contain a file `v1.json` that should contain the
-JSON-LD context definition for the credential.
+JSON-LD context definition for the credential, for example
+`./contexts/movie-ticket/v1.json`.
 2. Please note that once a context is created, it becomes locked and cannot be
 modified. If you want to update or make changes to a context, you must create a
 new context file with a new version within the context directory. For instance,
