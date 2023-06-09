@@ -46,7 +46,8 @@ credential. Make sure to use kebab case for the directory name.
 2. Inside the newly created credential directory, add a `credential.json` file.
 This file should contain all the necessary information for the credential,
 including the issuer, credential subject, and other relevant data, for example
-`./credentials/movie-ticket/credential.json`.
+`./credentials/movie-ticket/credential.json`. The credential MUST be conformant
+to [VC Data Model 1.1](https://www.w3.org/TR/vc-data-model#credentials).
 3. Additionally, place a logo `image` file for the credential in the
 corresponding directory. The image file should be in either `JPG` or `PNG`
 format, for example `./credentials/movie-ticket/image.png`.
@@ -59,7 +60,8 @@ To optionally add or update contexts in the `./contexts` directory:
 for the context in the `./contexts` directory. Make sure to use kebab case for
 the directory name. It should contain a file `v1.json` that should contain the
 JSON-LD context definition for the credential, for example
-`./contexts/movie-ticket/v1.json`.
+`./contexts/movie-ticket/v1.json`. The context MUST be conformant
+to [VC Data Model 1.1](https://www.w3.org/TR/vc-data-model/#contexts).
 2. Please note that once a context is created, it becomes locked and cannot be
 modified. If you want to update or make changes to a context, you must create a
 new context file with a new version within the context directory. For instance,
@@ -70,6 +72,10 @@ directory without any modifications.
 3. Please make sure that the context URLs for the contexts created in the
 `./contexts` directory follow the format:
 `https://contexts.vcplyaground.org/examples/foo-bar/v1.json`.
+4. In case you need to add a custom vocabulary documentation, you can include a
+`vocab` directory within your `./contexts/foo-bar` context directory. Inside the
+`./contexts/foo-bar/vocab` directory, you can define the vocabularies within an
+`index.html` file.
 
 ### Get the path to credentials directory
 ```
