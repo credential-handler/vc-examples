@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "gs1": "https://gs1.org/voc/",
+
+    "ClippedCouponCredential": {
+      "@id": "https://contexts.vcplayground.org/examples/retail-coupon#ClippedCouponCredential"
+    },
+    "clippedCoupon": {
+      "@id": "https://contexts.vcplayground.org/examples/retail-coupon#clippedCoupon",
+      "@type": "@id"
+    },
+    "name": {
+      "@id": "https://schema.org/name"
+    }
+  },
+
+  "CouponOffer": {
+    "@id": "https://contexts.vcplayground.org/examples/retail-coupon#CouponOffer",
+    "@context": {
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "gs1": "https://gs1.org/voc/",
+
+      "base_gs1": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#base_gs1"
+      },
+      "brand_id": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#brand_id"
+      },
+      "description": { "@id": "https://schema.org/description" },
+      "campaign_start_time": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#campaign_start_time",
+        "@type": "xsd:dateTime"
+      },
+      "campaign_end_time": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#campaign_end_time",
+        "@type": "xsd:dateTime"
+      },
+      "redemption_start_time": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#redemption_start_time",
+        "@type": "xsd:dateTime"
+      },
+      "redemption_end_time": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#redemption_end_time",
+        "@type": "xsd:dateTime"
+      },
+      "total_circulation": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#total_circulation"
+      },
+      "primary_purchase_save_value": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#primary_purchase_save_value"
+      },
+      "primary_purchase_requirements": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#primary_purchase_requirements"
+      },
+      "primary_purchase_req_code": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#primary_purchase_req_code"
+      },
+      "primary_purchase_gtins": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#primary_purchase_gtins"
+      },
+      "additional_purchase_rules_code": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#additional_purchase_rules_code"
+      },
+      "second_purchase_requirements": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#second_purchase_requirements"
+      },
+      "second_purchase_gs1_company_prefix": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#second_purchase_gs1_company_prefix"
+      },
+      "second_purchase_req_code": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#second_purchase_req_code"
+      },
+      "second_purchase_gtins": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#second_purchase_gtins"
+      },
+      "third_purchase_requirements": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#third_purchase_requirements"
+      },
+      "third_purchase_gs1_company_prefix": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#third_purchase_gs1_company_prefix"
+      },
+      "third_purchase_req_code": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#third_purchase_req_code"
+      },
+      "third_purchase_gtins": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#third_purchase_gtins"
+      },
+      "gln": {
+        "@id": "gs1:globalLocationNumber"
+      },
+      "save_value_code": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#save_value_code"
+      },
+      "applies_to_which_item": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#applies_to_which_item"
+      },
+      "store_coupon": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#store_coupon"
+      },
+      "donot_multiply_flag": {
+        "@id": "https://contexts.vcplayground.org/examples/retail-coupon#donot_multiply_flag"
+      }
+    }
+  }
+}
