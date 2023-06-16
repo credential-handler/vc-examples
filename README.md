@@ -71,7 +71,7 @@ named `v2.json` containing the updated JSON-LD context definition within
 directory without any modifications.
 3. Please make sure that the context URLs for the contexts created in the
 `./contexts` directory follow the format:
-`https://contexts.vcplyaground.org/examples/foo-bar/v1.json`.
+`https://contexts.vcplayground.org/examples/foo-bar/v1.json`.
 4. In case you need to add a custom vocabulary documentation, you can include a
 `vocab` directory within your `./contexts/foo-bar` context directory. Inside the
 `./contexts/foo-bar/vocab` directory, you can define the vocabularies within an
