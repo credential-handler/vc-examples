@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "files": [
-    "contexts/",
+    "contexts/**/*.{json, html}",
     "credentials/**/*.{jpg,json,png}",
     "lib/*.js"
   ],
