@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 5.0.0 - 2023-06-TBD
+## 5.0.0 - 2023-06-22
 
 ### Changed
 - **BREAKING**: Update dir names for `movieTicket`, `introToChapi` and
