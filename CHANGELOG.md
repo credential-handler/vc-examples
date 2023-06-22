@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 5.0.1 - 2023-06-TBD
+## 5.0.1 - 2023-06-22
 
 ### Fixed
 - Fix `examDate` type URL to use `http` instead of `https`.
