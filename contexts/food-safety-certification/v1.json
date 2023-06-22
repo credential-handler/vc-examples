@@ -20,7 +20,7 @@
         "certificateId": "https://contexts.vcplayground.org/examples/food-safety-certification/vocab#certificateId",
         "examDate": {
           "@id": "https://contexts.vcplayground.org/examples/food-safety-certification/vocab#examDate",
-          "@type": "https://www.w3.org/2001/XMLSchema#dateTime"
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "testCode": "https://contexts.vcplayground.org/examples/food-safety-certification/vocab#testCode"
       }
