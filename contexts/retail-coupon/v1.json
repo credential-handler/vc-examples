@@ -16,10 +16,12 @@
       "@id": "https://schema.org/name"
     },
     "image": {
-      "@id": "https://schema.org/image"
+      "@id": "https://schema.org/image",
+      "@type": "@id"
     },
     "url": {
-      "@id": "https://schema.org/url"
+      "@id": "https://schema.org/url",
+      "@type": "@id"
     },
 
     "CouponOffer": {
@@ -39,19 +41,19 @@
         "description": { "@id": "https://schema.org/description" },
         "campaign_start_time": {
           "@id": "https://contexts.vcplayground.org/examples/retail-coupon/vocab#campaign_start_time",
-          "@type": "xsd:dateTime"
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "campaign_end_time": {
           "@id": "https://contexts.vcplayground.org/examples/retail-coupon/vocab#campaign_end_time",
-          "@type": "xsd:dateTime"
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "redemption_start_time": {
           "@id": "https://contexts.vcplayground.org/examples/retail-coupon/vocab#redemption_start_time",
-          "@type": "xsd:dateTime"
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "redemption_end_time": {
           "@id": "https://contexts.vcplayground.org/examples/retail-coupon/vocab#redemption_end_time",
-          "@type": "xsd:dateTime"
+          "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "total_circulation": {
           "@id": "https://contexts.vcplayground.org/examples/retail-coupon/vocab#total_circulation"
