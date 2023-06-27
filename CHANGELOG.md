@@ -4,6 +4,21 @@
 
 ### Added
 - Add context, vocab, and credential example for `retail-coupon`.
+## 5.0.1 - 2023-06-22
+
+### Fixed
+- Fix `examDate` type URL to use `http` instead of `https`.
+
+## 5.0.0 - 2023-06-22
+
+### Changed
+- **BREAKING**: Update dir names for `movieTicket`, `introToChapi` and
+  `safechef` to kebab case.
+
+### Fixed
+- Update context URLs to a cleaner format
+  `https://contexts.vcplayground.org/examples/foo-bar/v1.json`.
+- Fix vocab URLs.
 
 ## 4.0.0 - 2023-05-31
 
