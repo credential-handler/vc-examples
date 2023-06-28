@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      defer></script>
+    <script class="remove">
+      var respecConfig = {
+        shortName: "retail-coupon-vc-example",
+        editors: [
+          {
+            name: "Nate Otto",
+            url: "https://ottonomy.net/",
+            company: "Skybridge Skills",
+            companyURL: "https://skybridgeskills.com/"
+          },
+        ],
+        specStatus: "unofficial",
+      };
+    </script>
+
+    <title>Retail Coupon VC Example Vocabulary</title>
+    <meta
+      name="description"
+      content="An example set of terms that can be used to describe an AI 8112 retail coupon credential"
+    />
+  </head>
+
+  <body>
+    <section id="abstract">
+        <p>
+            A retail coupon is traditionally a snippet of paper clipped out of a
+            newspaper or promotion. Now consumers can clip Verifiable Credentials.
+            Often digital coupons are represented with an image that includes a
+            thick dashed border, to signal "cut here". To redeem, consumers might
+            select a coupon from a retailer's app or website and obtain a
+            <code>ClippedCouponCredential</code> from the retailer that can be
+            redeemed at the point of sale. Each clipped coupon identifies a
+            <code>CouponOffer</code>, which carries metadata defined by the
+            manufacturer about a discount offer. An offer sets the value of a
+            discount, the products to which it applies, and the conditions under
+            which it can be redeemed. This information is sufficient to render a
+            scannable
+            <a
+              href="https://www.gs1us.org/upcs-barcodes-prefixes/additional-ways-to-identify-products/coupons"
+              >GS1</a>
+            barcode that could provide a traditional paper-like presentation of the
+            coupon where presentation of the VC would be impractical.
+          </p>
+          <p class="note" title="Unstable Vocabulary">
+            While
+            <a href="https://www.gs1.org/voc/">GS1 has defined an open data vocabulary</a>
+            that contains some terms related to coupons, many other coupon terms
+            have not yet been published to such an official document. The terms
+            waiting to be locked down to final IRIs appear in this document. Terms
+            from GS1 included in the example credential include:
+            <a href="https://www.gs1.org/voc/globalLocationNumber"><code>gln</code></a>.
+          </p>
+    </section>
+    <section id="ClippedCouponCredential">
+      <h2>ClippedCouponCredential</h2>
+      <table>
+        <caption>
+          Terms that make up a ClippedCouponCredential.credentialSubject
+        </caption>
+        <thead>
+          <tr>
+            <th>Term id</th>
+            <th>Term name</th>
+            <th>Term description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td id="clippedCoupon">
+            <code>clippedCoupon</code>
+          </td>
+          <td>clipped coupon</td>
+          <td>
+            Identifies the <code>CouponOffer</code> that was clipped by the
+            subject/holder.
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="CouponOffer">
+      <h2>CouponOffer</h2>
+      <p>
+        The contents of a CouponOffer describe the <code>base_gs1</code> primary
+        lookup code for the offer, as registered with the Coupon Bureau and
+        additional metadata about the offered discounts and purchase
+        requirements.
+      </p>
+
+      <table>
+        <caption>
+          Terms that make up a CouponOffer included in
+          <code>credentialSubject.clippedCoupon</code>.
+        </caption>
+        <thead>
+          <tr>
+            <th>Term id</th>
+            <th>Term name</th>
+            <th>Term description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td id="base_gs1">
+            <code>base_gs1</code>
+          </td>
+          <td>Base GS1</td>
+          <td>
+            The primary identifier of the coupon offer, as registered with the
+            Coupon Bureau.
+          </td>
+        </tr>
+        <tr>
+          <td id="brand_id">
+            <code>brand_id</code>
+          </td>
+          <td>Brand ID</td>
+          <td>The primary identifier of the brand offering the coupon.</td>
+        </tr>
+        <tr>
+          <td id="campaign_start_time">
+            <code>campaign_start_time</code>
+          </td>
+          <td>Campaign Start</td>
+          <td>
+            The date of the campaign start, promoting the coupon and circulating
+            it to consumers. In the format MM/DD/YYYY for compatibility with
+            other AI 8112 processing systems. (Note: should context use
+            xsd:dateTime for this format? Probably not.)
+          </td>
+        </tr>
+        <tr>
+          <td id="campaign_end_time">
+            <code>campaign_end_time</code>
+          </td>
+          <td>Campaign End</td>
+          <td>
+            The date the campaign ends. In the format MM/DD/YYYY for
+            compatibility with other AI 8112 processing systems. (Note: should
+            context use xsd:dateTime for this format? Probably not.)
+          </td>
+        </tr>
+        <tr>
+          <td id="redemption_start_time">
+            <code>redemption_start_time</code>
+          </td>
+          <td>Redemption Start</td>
+          <td>
+            The date redemption may begin. In the format MM/DD/YYYY for
+            compatibility with other AI 8112 processing systems. (Note: should
+            context use xsd:dateTime for this format? Probably not.)
+          </td>
+        </tr>
+        <tr>
+          <td id="redemption_send_time">
+            <code>redemption_end_time</code>
+          </td>
+          <td>Redemption End</td>
+          <td>
+            The date redemption ends and the coupon is no longer valid. In the
+            format MM/DD/YYYY for compatibility with other AI 8112 processing
+            systems. (Note: should context use xsd:dateTime for this format?
+            Probably not.)
+          </td>
+        </tr>
+        <tr>
+          <td id="total_circulation">
+            <code>total_circulation</code>
+          </td>
+          <td>Total Circulation</td>
+          <td>
+            A number (as a string for compatibility) of coupons carrying this
+            offer intended for circulation.
+          </td>
+        </tr>
+        <tr>
+          <td id="primary_purchase_save_value">
+            <code>primary_purchase_save_value</code>
+          </td>
+          <td>Primary Purchase Save Value</td>
+          <td>
+            A number of cents a consumer may save by applying the coupon to
+            their purchase (as a string for compatibility). Strings with a
+            percent sign, like <code>"50%"</code>, may denote a percentage
+            discount. (Note: Format of this field not specified in TCB public
+            docs.)
+          </td>
+        </tr>
+        <tr>
+          <td id="primary_purchase_requirements">
+            <code>primary_purchase_requirements</code>
+          </td>
+          <td>Primary Purchase Requirements</td>
+          <td>
+            A string representing the primary purchase required to redeem the
+            offer.
+          </td>
+        </tr>
+        <tr>
+          <td id="primary_purchase_req_code">
+            <code>primary_purchase_req_code</code>
+          </td>
+          <td>Primary Purchase Requirement Code</td>
+          <td>
+            A code representing a primary purchase requirement type.
+            <code>"1"</code> is common.
+          </td>
+        </tr>
+        <tr>
+          <td id="primary_purchase_gtins">
+            <code>primary_purchase_gtins</code>
+          </td>
+          <td>Primary Purchase GTINs</td>
+          <td>
+            An array of string GTINs (such as UPC or EAN-13 format) representing
+            primary purchase items eligible for the offer.
+          </td>
+        </tr>
+        <tr>
+          <td id="additional_purchase_rules_code">
+            <code>additional_purchase_rules_code</code>
+          </td>
+          <td>Additional Purchase Rules Code</td>
+          <td>
+            A code representing a primary purchase requirement type. Empty
+            string (<code>""</code>) is common if no additional purchases are
+            required.
+          </td>
+        </tr>
+        <tr>
+          <td id="second_purchase_requirements">
+            <code>second_purchase_requirements</code>
+          </td>
+          <td>Second Purchase Requirements</td>
+          <td>
+            A string representing the secondary purchase required to redeem the
+            offer. For example, if you buy a Hamburger (primary), and Fries
+            (secondary), you might be entitled to a 100% discount on a beverage.
+          </td>
+        </tr>
+        <tr>
+          <td id="second_purchase_gs1_company_prefix">
+            <code>second_purchase_gs1_company_prefix</code>
+          </td>
+          <td>Second Purchase GS1 Company Prefix</td>
+          <td>A string representing the secondary purchase company prefix.</td>
+        </tr>
+        <tr>
+          <td id="second_purchase_req_code">
+            <code>second_purchase_req_code</code>
+          </td>
+          <td>Second Purchase Requirement Code</td>
+          <td>
+            A code representing a second purchase requirement type.
+            <code>"1"</code> is common, or empty string (<code>""</code>) when
+            no requirements are set for a second purchase.
+          </td>
+        </tr>
+        <tr>
+          <td id="second_purchase_gtins">
+            <code>second_purchase_gtins</code>
+          </td>
+          <td>Second Purchase GTINs</td>
+          <td>
+            An array of string GTINs (such as UPC or EAN-13 format) representing
+            purchase options to meet second purchase requirements.
+          </td>
+        </tr>
+        <tr>
+          <td id="second_purchase_requirements">
+            <code>second_purchase_requirements</code>
+          </td>
+          <td>Second Purchase Requirements</td>
+          <td>
+            A string representing the secondary purchase required to redeem the
+            offer. For example, if you buy a Hamburger (primary), and Fries
+            (secondary), you might be entitled to a 100% discount on a beverage.
+          </td>
+        </tr>
+        <tr>
+          <td id="third_purchase_gs1_company_prefix">
+            <code>third_purchase_gs1_company_prefix</code>
+          </td>
+          <td>Third Purchase GS1 Company Prefix</td>
+          <td>
+            A string representing the third purchase company prefix if present.
+          </td>
+        </tr>
+        <tr>
+          <td id="third_purchase_req_code">
+            <code>third_purchase_req_code</code>
+          </td>
+          <td>Third Purchase Requirement Code</td>
+          <td>
+            A code representing a third purchase requirement type.
+            <code>"1"</code> is common, or empty string (<code>""</code>) when
+            no requirements are set for a third purchase.
+          </td>
+        </tr>
+        <tr>
+          <td id="third_purchase_gtins">
+            <code>third_purchase_gtins</code>
+          </td>
+          <td>Third Purchase GTINs</td>
+          <td>
+            An array of string GTINs (such as UPC or EAN-13 format) representing
+            purchase options to meet third purchase requirements.
+          </td>
+        </tr>
+        <tr>
+          <td id="save_value_code">
+            <code>save_value_code</code>
+          </td>
+          <td>Save Value Code</td>
+          <td>A string code, often <code>"1"</code>, that identifies a type of discount calculation to apply. Commonly <code>"1"</code>.</td>
+        </tr>
+        <tr>
+            <td id="applies_to_which_item">
+              <code>applies_to_which_item</code>
+            </td>
+            <td>Applies to Which Item</td>
+            <td>A string code that may help disambiguate which item the discount refers to. Commonly empty string (<code>""</code>).</td>
+          </tr>
+          <tr>
+            <td id="store_coupon">
+              <code>store_coupon</code>
+            </td>
+            <td>Store Coupon</td>
+            <td>String value that identifies whether a coupon is a store coupon. Usage not documented in public materials. Commonly <code>"1"</code>.</td>
+          </tr>
+          <tr>
+            <td id="donot_multiply_flag">
+              <code>donot_multiply_flag</code>
+            </td>
+            <td>Do Not Multiply Flag</td>
+            <td>String value that controls handling of multiple discounts. Usage not documented in public materials. Commonly empty string (<code>""</code>).</td>
+          </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Example Credential</h2>
+      <pre class="example">{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://contexts.vcplayground.org/examples/retail-coupon/v1.json"
+    ],
+    "type": ["VerifiableCredential", "ClippedCouponCredential"],
+    "issuer": {
+        "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
+        "name": "Big Retail Store",
+        "url": "https://example.com",
+        "image": "https://playground.chapi.io/examples/retail-coupon/logo.png"
+    },
+    "name": "Digital coupon: 50% off on disco balls, small or large",
+    "issuanceDate": "2023-06-04T00:00:00Z",
+    "expirationDate": "2023-08-01T08:00:00Z",
+    "image": "https://playground.chapi.io/examples/retail-coupon/image.png",
+    "credentialSubject": {
+        "id": "did:key:123",
+        "clippedCoupon": {
+        "type": "CouponOffer",
+        "base_gs1": "8112010031493140181",
+        "brand_id": "Party Palace",
+        "description": "50% off on disco balls, small or large",
+        "campaign_start_time": "06/01/2023",
+        "campaign_end_time": "06/30/2023",
+        "redemption_start_time": "06/01/2023",
+        "redemption_end_time": "07/31/2023",
+        "total_circulation": "100",
+        "primary_purchase_save_value": "1",
+        "primary_purchase_requirements": "1",
+        "primary_purchase_req_code": "1",
+        "primary_purchase_gtins": ["294239749273", "239084320923"],
+        "additional_purchase_rules_code": "",
+        "second_purchase_requirements": "",
+        "second_purchase_gs1_company_prefix": "",
+        "second_purchase_req_code": "",
+        "second_purchase_gtins": [""],
+        "third_purchase_requirements": "",
+        "third_purchase_gs1_company_prefix": "",
+        "third_purchase_req_code": "",
+        "third_purchase_gtins": [""],
+        "gln": "",
+        "save_value_code": "1",
+        "applies_to_which_item": "",
+        "store_coupon": "1",
+        "donot_multiply_flag": ""
+        }
+    }
+}
+</pre>
+    </section>
+  </body>
+</html>
