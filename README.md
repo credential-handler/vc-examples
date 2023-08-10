@@ -1,6 +1,6 @@
 #  @credential-handler/vc-examples _(@credential-handler/vc-examples)_
 
-> Example Verifiable Credentials for the CHAPI Issuer Playground.
+> Example Verifiable Credentials for the CHAPI Playground.
 
 ## Table of Contents
 
