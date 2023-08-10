@@ -1,9 +1,10 @@
 # vc-examples Changelog
 
-## [Unreleased]
+## 5.1.0 - 2023-08-10
 
 ### Added
-- Add context, vocab, and credential example for `retail-coupon`.
+- Add context, vocab, and credential example for  `retail-coupon`.
+- Add credential example for `jff-3`.
 
 ## 5.0.1 - 2023-06-22
 
