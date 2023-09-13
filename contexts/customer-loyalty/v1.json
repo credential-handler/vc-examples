@@ -1,21 +1,27 @@
 {
   "@context": {
-    "@version": 1.1,
     "@protected": true,
-    "CustomerLoyaltyCredential": "https://contexts.vcplayground.org/examples/customer-loyalty/v1.json#CustomerLoyaltyCredential",
     "id": "@id",
     "type": "@type",
-    "image": {
-      "@id": "https://schema.org/image",
-      "@type": "@id"
-    },
-    "url": {
-      "@id": "https://schema.org/url",
-      "@type": "@id"
-    },
-    "name": "https://schema.org/name",
-    "description": "https://schema.org/description",
-    "identifier": "https://schema.org/identifier",
-    "branchCode": "https://schema.org/branchCode"
+    "CustomerLoyaltyCredential": {
+      "@id": "https://contexts.vcplayground.org/examples/customer-loyalty/v1.json#CustomerLoyaltyCredential",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "image": {
+          "@id": "https://schema.org/image",
+          "@type": "@id"
+        },
+        "url": {
+          "@id": "https://schema.org/url",
+          "@type": "@id"
+        },
+        "name": "https://schema.org/name",
+        "description": "https://schema.org/description",
+        "identifier": "https://schema.org/identifier",
+        "branchCode": "https://schema.org/branchCode"
+      }
+    }
   }
 }
