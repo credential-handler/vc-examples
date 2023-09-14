@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 5.2.0 - 2023-09-14
+
+### Added
+- Add context example for `customer-loyalty`.
+
 ## 5.1.0 - 2023-08-10
 
 ### Added
