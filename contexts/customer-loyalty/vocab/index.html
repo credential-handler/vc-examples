@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      defer
+    ></script>
+    <script class="remove">
+      var respecConfig = {
+        shortName: "customer-loyalty-vc-example",
+        latestVersion: null,
+        edDraftURI: "https://context.vcplayground.org/examples/customer-loyalty/vocab/",
+        editors: [
+          {
+            name: "Nate Otto",
+            url: "https://ottonomy.net/",
+            company: "Skybridge Skills",
+            companyURL: "https://skybridgeskills.com/",
+          },
+        ],
+        specStatus: "unofficial",
+      };
+    </script>
+
+    <title>Customer Loyalty Card Verifiable Credential Vocabulary</title>
+    <meta
+      name="description"
+      content="An example set of terms that can be used to describe a customer loyalty card"
+    />
+  </head>
+
+  <body>
+    <section id="abstract">
+      <p>
+        A customer loyalty card is traditionally a plastic card given to a
+        customer by a retailer. Scanned at point of sale, it contains a
+        persistent identifier that the retailer uses to identify the customer
+        and correlate their purchases over time. It may be associated with an
+        online account and/or digital coupons issued to the customer.
+      </p>
+      <p class="note" title="Unstable Vocabulary">
+        The vocabulary terms that appear in this document and the associated
+        JSON-LD context file have not been reviewed for standards-track adoption
+        by any entity. They serve primarily as an example of how a customer
+        loyalty credential may function and are ready for review by appropriate
+        communities and groups.
+      </p>
+    </section>
+    <section id="CustomerLoyaltyCredential">
+      <h2>CustomerLoyaltyCredential</h2>
+      <table>
+        <caption>
+          Terms that are used in a CustomerLoyaltyCredential.credentialSubject
+        </caption>
+        <thead>
+          <tr>
+            <th>Term id</th>
+            <th>Term name</th>
+            <th>Term description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td id="customerLoyaltyCard">
+            <code>customerLoyaltyCard</code>
+          </td>
+          <td>customer loyalty card</td>
+          <td>
+            Describes a customer loyalty card issued to the credential subject.
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="CustomerLoyaltyCard">
+      <h2>CustomerLoyaltyCard</h2>
+      <p>
+        A CustomerLoyaltyCard defines the identifier associated with a customer,
+        and often a branch or location code for the store that is the customer's
+        preferred branch in a retail chain at which to shop.
+      </p>
+
+      <table>
+        <caption>
+          Terms that make up a CustomerLoyaltyCard included in
+          <code>credentialSubject.customerLoyaltyCard</code
+          >.
+        </caption>
+        <thead>
+          <tr>
+            <th>Term id</th>
+            <th>Term name</th>
+            <th>Term description</th>
+          </tr>
+        </thead>
+        <tr>
+          <td id="identifier">
+            <code>identifier</code>
+          </td>
+          <td>Identifier</td>
+          <td>
+            The primary identifier of the customer, by this retailer (issuer).
+            It may be a number, UUID, or other string.
+          </td>
+        </tr>
+        <tr>
+          <td id="branchCode">
+            <code>branchCode</code>
+          </td>
+          <td>Branch code</td>
+          <td>
+            An identifier for the branch or location used by the issuer to
+            identify a location at which the customer typically shops.
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Example Credential</h2>
+      <pre class="example">
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://contexts.vcplayground.org/examples/customer-loyalty/v1.json"
+    ],
+    "type": [
+        "VerifiableCredential",
+        "CustomerLoyaltyCredential"
+    ],
+    "description": "Earn Big Rewards at Big Retail Store by presenting your loyalty card!",
+    "image": "https://playground.chapi.io/examples/customer-loyalty/image.png",
+    "name": "Big Retail Customer Loyalty Card",
+    "credentialSubject": {
+        "id": "did:key:123",
+        "customerLoyaltyCard": {
+            "type": "CustomerLoyaltyCard",
+            "branchCode": "461",
+            "identifier": "9712323901"
+        }
+    },
+    "issuanceDate": "2023-06-12T00:00:00Z",
+    "issuer": {
+        "id": "did:key:z6MkrHKzgsahxBLyNAbLQyB1pcWNYC9GmywiWPgkrvntAZcj",
+        "image": "https://playground.chapi.io/examples/retail-coupon/logo.png",
+        "name": "Big Retail Store",
+        "url": "https://example.com"
+    }
+}
+</pre
+      >
+    </section>
+  </body>
+</html>
