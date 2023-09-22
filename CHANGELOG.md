@@ -1,5 +1,11 @@
 # vc-examples Changelog
 
+## 5.3.0 - 2023-09-xx
+
+### Added
+- Add context example for `first-responder`.
+
+
 ## 5.2.0 - 2023-09-14
 
 ### Added
