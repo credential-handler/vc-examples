@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 6.0.0 - 2023-09-25
+
+### Changed
+- - **BREAKING**: Changed context in credential for `jff3`.
+
 ## 5.3.0 - 2023-09-22
 
 ### Added
