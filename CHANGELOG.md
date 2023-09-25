@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.1.0 - 2023-09-xx
+## 6.1.0 - 2023-09-25
 
 ### Added
 - Created v2 `jff3` credential with open badge 3.0.2 context.
