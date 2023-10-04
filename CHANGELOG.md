@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.2.1 - 2023-10-xx
+## 6.2.1 - 2023-10-04
 
 ### Fixed
 - Use standard image naming convention.
