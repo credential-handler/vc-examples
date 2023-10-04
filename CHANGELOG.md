@@ -1,14 +1,17 @@
 # vc-examples Changelog
 
+## 6.2.0 - 2023-10-04
+
+### Added
+- Add academic course credential.
+
 ## 6.1.0 - 2023-09-25
 
 ### Added
 - Created v2 `jff3` credential with open badge 3.0.2 context.
 
-
 ### Changed
 - Reverted context in credential for `jff3`.
-
 
 ## 6.0.0 - 2023-09-25
 
