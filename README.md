@@ -1,6 +1,7 @@
-#  @credential-handler/vc-examples _(@credential-handler/vc-examples)_
+# Example Verifiable Credentials _(@credential-handler/vc-examples)_
 
-> Example Verifiable Credentials for the CHAPI Playground.
+Example Verifiable Credentials. Beyond being useful for general testing, these
+are also in use on the [Verifiable Credential Playground](https://vcplayground.org/).
 
 ## Table of Contents
 
@@ -12,7 +13,7 @@
 
 ## Background
 
-Credentials added to this package are to be used with CHAPI Issuer Playground
+Credentials added to this package are used on the [VC Playground's Issuer](https://vcplayground.org/issuer)
 tool.
 
 ## Install
