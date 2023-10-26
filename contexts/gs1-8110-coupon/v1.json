@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+
+    "GS18110CouponCredential": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#GS18110CouponCredential",
+    "clippedCoupon": {
+      "@id": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#clippedCoupon",
+      "@type": "@id"
+    },
+    "name": "https://schema.org/name",
+    "image": {
+      "@id": "https://schema.org/image",
+      "@type": "@id"
+    },
+    "url": {
+      "@id": "https://schema.org/url",
+      "@type": "@id"
+    },
+
+    "CouponOffer": {
+      "@id": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#CouponOffer",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+
+        "description": "https://gs1.org/voc/offerDescription",
+        "applicationId": "https://gs1.org/voc/AI",
+
+        "gs1CompanyPrefix": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#gs1CompanyPrefix",
+        "offerCode": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#offerCode",
+        "saveValue": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#saveValue",
+        "primaryPurchaseRequirement": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#primaryPurchaseRequirement",
+        "primaryPurchaseRequirementCode": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#primaryPurchaseRequirementCode",
+        "primaryPurchaseFamilyCode": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#primaryPurchaseFamilyCode"
+      }
+    }
+  }
+}
