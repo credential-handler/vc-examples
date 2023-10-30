@@ -5,19 +5,10 @@
     "type": "@type",
 
     "GS18110CouponCredential": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#GS18110CouponCredential",
-    "clippedCoupon": {
-      "@id": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#clippedCoupon",
-      "@type": "@id"
-    },
+    "clippedCoupon": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#clippedCoupon",
     "name": "https://schema.org/name",
-    "image": {
-      "@id": "https://schema.org/image",
-      "@type": "@id"
-    },
-    "url": {
-      "@id": "https://schema.org/url",
-      "@type": "@id"
-    },
+    "image": "https://schema.org/image",
+    "url": "https://schema.org/url",
 
     "CouponOffer": {
       "@id": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#CouponOffer",
