@@ -29,7 +29,7 @@
         "gtin": "https://gs1.org/voc/gtin",
 
         "description": "https://gs1.org/voc/offerDescription",
-        "applicationId": "https://gs1.org/voc/AI",
+        "applicationId": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#applicationId",
 
         "gs1CompanyPrefix": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#gs1CompanyPrefix",
         "offerCode": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#offerCode",
