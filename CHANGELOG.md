@@ -1,7 +1,13 @@
 # vc-examples Changelog
 
-## [Unreleased]
+## 6.3.0 - 2023-10-30
+
+### Added
 - Add GS1 8110 coupon credential.
+
+### Changed
+- Make `jff3` credential use open badge 3.0.2 context by default.
+- Update credential example for `customer-loyalty`.
 
 ## 6.2.1 - 2023-10-04
 
