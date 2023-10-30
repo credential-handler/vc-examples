@@ -1,5 +1,8 @@
 # vc-examples Changelog
 
+## [Unreleased]
+- Add GS1 8110 coupon credential.
+
 ## 6.2.1 - 2023-10-04
 
 ### Fixed

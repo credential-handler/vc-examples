@@ -26,6 +26,8 @@
         "id": "@id",
         "type": "@type",
 
+        "gtin": "https://gs1.org/voc/gtin",
+
         "description": "https://gs1.org/voc/offerDescription",
         "applicationId": "https://gs1.org/voc/AI",
 
