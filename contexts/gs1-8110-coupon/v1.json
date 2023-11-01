@@ -20,6 +20,7 @@
         "gtin": "https://gs1.org/voc/gtin",
 
         "description": "https://gs1.org/voc/offerDescription",
+        "exclusionDescription": "https://gs1.org/voc/exclusionDescription",
         "applicationId": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#applicationId",
 
         "gs1CompanyPrefix": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#gs1CompanyPrefix",
