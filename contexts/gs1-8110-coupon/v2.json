@@ -7,6 +7,7 @@
     "GS18110CouponCredential": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#GS18110CouponCredential",
     "clippedCoupon": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#clippedCoupon",
     "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
     "image": "https://schema.org/image",
     "url": "https://schema.org/url",
 
@@ -19,7 +20,7 @@
 
         "gtin": "https://gs1.org/voc/gtin",
 
-        "description": "https://gs1.org/voc/offerDescription",
+        "offerDescription": "https://gs1.org/voc/offerDescription",
         "exclusionDescription": "https://gs1.org/voc/exclusionDescription",
         "applicationId": "https://contexts.vcplayground.org/examples/gs1-8110-coupon/vocab#applicationId",
 
