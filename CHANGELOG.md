@@ -1,5 +1,15 @@
 # vc-examples Changelog
 
+## 6.3.1 - 2023-11-dd
+
+### Added
+- Bump `gs1-8110-coupon` context to v2
+- Add https://schema.org/description and rename original `description` to
+`offerDescription`
+
+### Changed
+- Update `gs1-8110-coupon` with square images
+
 ## 6.3.0 - 2023-10-30
 
 ### Added
