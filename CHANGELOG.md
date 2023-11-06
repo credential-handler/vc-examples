@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.3.1 - 2023-11-dd
+## 6.3.1 - 2023-11-06
 
 ### Added
 - Bump `gs1-8110-coupon` context to v2
