@@ -1,5 +1,12 @@
 # vc-examples Changelog
 
+## x.x.x - yyyy-mm-dd
+
+### Added
+- Add Utopia Employment Authorization Document (EAD).
+- Add Utopia Driver's License (DL).
+- Add Utopia Naturalization Certificate (NatCert).
+
 ## 6.3.1 - 2023-11-06
 
 ### Added
