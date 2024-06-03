@@ -6,6 +6,8 @@
 - Add Utopia Employment Authorization Document (EAD).
 - Add Utopia Driver's License (DL).
 - Add Utopia Naturalization Certificate (NatCert).
+- Add queries.json to each credential.
+- Allow for multiple queries per credential.
 
 ## 6.3.1 - 2023-11-06
 
