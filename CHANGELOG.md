@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## x.x.x - yyyy-mm-dd
+## 6.4.0 - 2024-06-10
 
 ### Added
 - Add Utopia Employment Authorization Document (EAD).
