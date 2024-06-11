@@ -1,13 +1,16 @@
 # vc-examples Changelog
 
+## 6.5.0 - 2024-06-xx
+
+- Add queries.json to each credential.
+- Allow for multiple queries per credential.
+
 ## 6.4.0 - 2024-06-10
 
 ### Added
 - Add Utopia Employment Authorization Document (EAD).
 - Add Utopia Driver's License (DL).
 - Add Utopia Naturalization Certificate (NatCert).
-- Add queries.json to each credential.
-- Allow for multiple queries per credential.
 
 ## 6.3.1 - 2023-11-06
 
