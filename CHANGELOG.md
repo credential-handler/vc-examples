@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.5.0 - 2024-06-xx
+## 6.5.0 - 2024-06-11
 
 - Add queries.json to each credential.
 - Allow for multiple queries per credential.
