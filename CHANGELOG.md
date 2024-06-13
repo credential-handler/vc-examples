@@ -1,8 +1,16 @@
 # vc-examples Changelog
 
+## 6.5.1 - 2024-06-xx
+
+### Fixed
+- Include svg resources in package.
+
 ## 6.5.0 - 2024-06-11
 
+### Added
 - Add queries.json to each credential.
+
+### Changed
 - Allow for multiple queries per credential.
 
 ## 6.4.0 - 2024-06-10
