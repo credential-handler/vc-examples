@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.5.1 - 2024-06-xx
+## 6.5.1 - 2024-06-13
 
 ### Fixed
 - Include svg resources in package.
