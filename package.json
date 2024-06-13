@@ -11,7 +11,7 @@
   },
   "files": [
     "contexts/**/*.{json, html}",
-    "credentials/**/*.{jpg,json,png}",
+    "credentials/**/*.{jpg,json,png,svg}",
     "lib/*.js"
   ],
   "devDependencies": {
