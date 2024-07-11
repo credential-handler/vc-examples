@@ -1,5 +1,13 @@
 # vc-examples Changelog
 
+## 6.x.x - 2024-mm-dd
+
+### Added
+- Add Medical First Responder credential.
+
+### Fixed
+- Inlined fonts and compressed SVGs for EAD, DL, and NatCert.
+
 ## 6.5.1 - 2024-06-13
 
 ### Fixed
