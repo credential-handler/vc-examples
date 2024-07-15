@@ -3,6 +3,14 @@
 Example Verifiable Credentials. Beyond being useful for general testing, these
 are also in use on the [Verifiable Credential Playground](https://vcplayground.org/).
 
+## CAUTION
+
+The Verifiable Credentials in this repository are primarily created for the
+[Verifiable Credentials Playground](https://vcplayground.org/). Consequently,
+they should _not_ be considered production ready credentials and they may be
+missing many necessary production and stability focused features. Please only
+use them for experimentation.
+
 ## Table of Contents
 
 - [Background](#background)
