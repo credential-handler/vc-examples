@@ -7,6 +7,7 @@
 
 ### Fixed
 - Inlined fonts and compressed SVGs for EAD, DL, and NatCert.
+- Corrected context URL for Driver's License.
 
 ## 6.5.1 - 2024-06-13
 
