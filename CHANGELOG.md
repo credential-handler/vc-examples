@@ -6,8 +6,8 @@
 - Add Medical First Responder credential.
 
 ### Fixed
-- Inlined fonts and compressed SVGs for EAD, DL, and NatCert.
-- Corrected context URL for Driver's License.
+- Inline fonts and compressed SVGs for EAD, DL, and NatCert.
+- Correct context URL for Driver's License.
 
 ## 6.5.1 - 2024-06-13
 
