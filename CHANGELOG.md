@@ -8,6 +8,7 @@
 ### Fixed
 - Inline fonts and compressed SVGs for EAD, DL, and NatCert.
 - Correct context URL for Driver's License.
+- Use citizenship v3 context for Utopia Naturalization Certificate.
 
 ## 6.5.1 - 2024-06-13
 
