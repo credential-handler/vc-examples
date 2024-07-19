@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.x.x - 2024-mm-dd
+## 6.6.0 - 2024-07-19
 
 ### Added
 - Add Medical First Responder credential.
