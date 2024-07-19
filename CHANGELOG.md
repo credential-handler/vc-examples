@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 6.6.1 - 2024-07-dd
+
+### Fixed
+- Update DL & EAD queries to match their credentials.
+
 ## 6.6.0 - 2024-07-19
 
 ### Added
