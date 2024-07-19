@@ -1,6 +1,6 @@
 {
   "name": "@credential-handler/vc-examples",
-  "version": "6.6.1-0",
+  "version": "6.6.1",
   "description": "Verifiable Credentials for the CHAPI Issuer Playground",
   "type": "module",
   "main": "./lib/index.js",
