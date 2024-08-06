@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 6.7.0 - 2024-08-xx
+
+### Added
+- Include selective disclosure query for DL.
+
 ## 6.6.1 - 2024-07-19
 
 ### Fixed
