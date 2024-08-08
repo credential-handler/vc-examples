@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.8.0 - 2024-08-xx
+## 6.8.0 - 2024-08-08
 
 ### Added
 - Add `renderMethod` for back of card and PDF417 only view to Utopia DL.
