@@ -1,13 +1,13 @@
 # vc-examples Changelog
 
-## 6.8.0 - 2024-08-08
+## 6.8.0 - 2024-08-xx
 
 ### Added
 - Add `renderMethod` for back of card and PDF417 only view to Utopia DL.
 
 ### Changed
 - Values in the Utopia Driver's License now reflect the values encoded in their
-associated PDF417.
+  associated PDF417.
 
 ## 6.7.0 - 2024-08-06
 
