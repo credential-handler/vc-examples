@@ -1,5 +1,11 @@
 # vc-examples Changelog
 
+## 6.x.x - yyyy-mm-dd
+
+### Fixed
+- Updated issuer icons for Utopia credentials.
+- Fixed photo stretching issuse on Utopia DL and NatCert.
+
 ## 6.8.0 - 2024-08-08
 
 ### Added
