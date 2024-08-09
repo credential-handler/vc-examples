@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.x.x - yyyy-mm-dd
+## 6.8.1 - 2024-08-09
 
 ### Fixed
 - Updated issuer icons for Utopia credentials.
