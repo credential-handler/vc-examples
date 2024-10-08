@@ -1,5 +1,12 @@
 # vc-examples Changelog
 
+## x.x.x - 2024-mm-dd
+
+### Added
+- Added a new Verifiable Credential v2 Movie Credential.
+- Added a new Movie Credential Context to fix #11 by correcting the `address`
+  term mapping.
+
 ## 6.8.1 - 2024-08-09
 
 ### Fixed
