@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.1.0 - 2024-10-10
+## 6.9.0 - 2024-10-10
 
 ### Added
 - Added a new Verifiable Credential v2 Movie Credential.
