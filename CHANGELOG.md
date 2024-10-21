@@ -1,5 +1,12 @@
 # vc-examples Changelog
 
+## x.x.x - 2024-mm-dd
+
+### Changed
+- Moved Movie Ticket VCDM v2 credential into `credentials/movie-ticket-vcdm-v2/`.
+- Created a parallel `contexts/movie-ticket-vcdm-v2/` folder for VCDMv2
+  compatible Movie Ticket context file versions.
+
 ## 6.9.0 - 2024-10-10
 
 ### Added
