@@ -11,7 +11,7 @@
 
 ### Fixed
 - Updated issuer icons for Utopia credentials.
-- Fixed photo stretching issuse on Utopia DL and NatCert.
+- Fixed photo stretching issues on Utopia DL and NatCert.
 
 ## 6.8.0 - 2024-08-08
 
