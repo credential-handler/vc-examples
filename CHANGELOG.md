@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## x.x.x - 2024-mm-dd
+## 6.10.0 - 2024-10-22
 
 ### Changed
 - Moved Movie Ticket VCDM v2 credential into `credentials/movie-ticket-vcdm-v2/`.
