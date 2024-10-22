@@ -6,6 +6,7 @@
 - Moved Movie Ticket VCDM v2 credential into `credentials/movie-ticket-vcdm-v2/`.
 - Created a parallel `contexts/movie-ticket-vcdm-v2/` folder for VCDMv2
   compatible Movie Ticket context file versions.
+- Set datatype for `startDate` in Movie Ticket VCDMv2 context.
 
 ## 6.9.0 - 2024-10-10
 
