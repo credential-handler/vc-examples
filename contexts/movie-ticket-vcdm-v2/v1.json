@@ -19,7 +19,10 @@
       "@id": "https://schema.org/location",
       "@type": "@id"
     },
-    "startDate": "https://schema.org/startDate",
+    "startDate": {
+      "@id": "https://schema.org/startDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "ticketNumber": "https://schema.org/ticketNumber",
     "ticketedSeat": "https://schema.org/ticketedSeat",
     "ticketToken": "https://schema.org/ticketToken",
