@@ -7,6 +7,8 @@
   Card.
 - Added a new Verifiable Credential v2.0 version of the Utopia Naturalization
   Certificate.
+- Added a new Verifiable Credential v2.0 version of the Utopia Employment
+  Authorization Document.
 
 ### Changed
 - Use generic issuer URLs.
