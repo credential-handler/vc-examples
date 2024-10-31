@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## x.x.x - 2024-mm-dd
+## 6.11.0 - 2024-10-31
 
 ### Added
 - Added a new Verifiable Credential v2.0 version of the Permanent Resident
