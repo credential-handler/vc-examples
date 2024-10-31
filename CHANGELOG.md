@@ -3,6 +3,8 @@
 ## x.x.x - 2024-mm-dd
 
 ### Added
+- Added a new Verifiable Credential v2.0 version of the Permanent Resident
+  Card.
 - Added a new Verifiable Credential v2.0 version of the Utopia Naturalization
   Certificate.
 
