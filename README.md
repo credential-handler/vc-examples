@@ -43,6 +43,20 @@ To run test:
 npm test
 ```
 
+To check credentials against local (and remote) contexts:
+
+```sh
+npm run check
+```
+
+This uses [jsonld.js](https://github.com/digitalbazaar/jsonld.js)'s
+"[Safe Mode](https://github.com/digitalbazaar/jsonld.js?tab=readme-ov-file#safe-mode)"
+to to check for missing terms.
+
+All local example context files are added as static contexts mapped to their
+future publication URLs via
+[jsonld-document-loader](https://github.com/digitalbazaar/jsonld-document-loader).
+
 ## Usage
 
 ### Add / Update a Verifiable Credential
