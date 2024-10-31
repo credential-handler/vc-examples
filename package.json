@@ -5,6 +5,7 @@
   "type": "module",
   "main": "./lib/index.js",
   "scripts": {
+    "check": "node test/safe-mode-check.js",
     "test": "npm run lint && npm run test-node",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 10000 test/*.spec.js",
     "lint": "eslint ."
@@ -15,12 +16,16 @@
     "lib/*.js"
   ],
   "devDependencies": {
+    "@11ty/eleventy-fetch": "^4.0.1",
     "chai": "^4.3.7",
     "cross-env": "^7.0.3",
     "eslint": "^8.34.0",
     "eslint-config-digitalbazaar": "^4.2.0",
     "eslint-plugin-jsdoc": "^40.0.0",
     "eslint-plugin-unicorn": "^45.0.2",
+    "glob": "^11.0.0",
+    "jsonld": "^8.3.2",
+    "jsonld-document-loader": "^2.2.0",
     "mocha": "^10.2.0"
   },
   "repository": {
