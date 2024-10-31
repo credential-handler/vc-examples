@@ -1,5 +1,11 @@
 # vc-examples Changelog
 
+## x.x.x - 2024-mm-dd
+
+### Added
+- Added a new Verifiable Credential v2.0 version of the Utopia Naturalization
+  Certificate.
+
 ## 6.10.0 - 2024-10-22
 
 ### Changed
