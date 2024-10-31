@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "SvgRenderingTemplate2024": {
+      "@id": "https://w3id.org/vc/render-method#SvgRenderingTemplate2024",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "digestMultibase": {
+          "@id": "https://w3id.org/security#digestMultibase",
+          "@type": "https://w3id.org/security#multibase"
+        },
+        "name": "https://schema.org/name",
+        "mediaQuery": "https://w3id.org/vc/render-method#mediaQuery",
+        "template": "https://w3id.org/vc/render-method#template"
+      }
+    }
+  }
+}
