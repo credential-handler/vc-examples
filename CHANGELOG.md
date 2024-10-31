@@ -8,6 +8,9 @@
 - Added a new Verifiable Credential v2.0 version of the Utopia Naturalization
   Certificate.
 
+### Changed
+- Use generic issuer URLs.
+
 ## 6.10.0 - 2024-10-22
 
 ### Changed
