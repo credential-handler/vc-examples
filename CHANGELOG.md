@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 6.11.1 - 2024-10-31
+
+### Fixed
+- Fixed missing comma in Permanent Resident Card query.
+
 ## 6.11.0 - 2024-10-31
 
 ### Added
