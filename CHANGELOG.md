@@ -3,7 +3,10 @@
 ## 6.12.0 - 2024-11-xx
 
 ### Changed
-- Add validFrom and validUntil with empty strings for PRC example.
+- Add `validFrom` and `validUntil` with empty strings for PRC example.
+
+### Removed
+- Deleted `id` fields for person specific credentials.
 
 ## 6.11.1 - 2024-10-31
 
