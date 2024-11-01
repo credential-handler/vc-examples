@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 6.12.0 - 2024-11-xx
+
+### Changed
+- Add validFrom and validUntil with empty strings for PRC example.
+
 ## 6.11.1 - 2024-10-31
 
 ### Fixed
