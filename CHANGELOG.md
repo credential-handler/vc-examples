@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.12.0 - 2024-11-xx
+## 6.12.0 - 2024-11-01
 
 ### Changed
 - Add `validFrom` and `validUntil` with empty strings for PRC example.
