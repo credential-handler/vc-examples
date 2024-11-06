@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## 6.12.1 - 2024-11-xx
+
+### Fixed
+- Fix change from `naturalizedOn` to `ceremonyDate` in natcert-vc-v2 SVG.
+
 ## 6.12.0 - 2024-11-01
 
 ### Changed
