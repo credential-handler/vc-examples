@@ -8,7 +8,6 @@ import {JsonLdDocumentLoader} from 'jsonld-document-loader';
 const jdl = new JsonLdDocumentLoader();
 
 // Loop all local context files and add them as static contexts at the base URL
-const baseUrl = 'https://contexts.vcplayground.org/examples/';
 const paths = await glob([`${contextsDir}/**/*.json`],
   {stat: true, withFileTypes: true});
 const timeSortedFiles = paths
@@ -23,8 +22,10 @@ const latestLocalContexts = new Map(timeSortedFiles.map(path => {
 latestLocalContexts.forEach((file, dir) => {
   const context = JSON.parse(
     fs.readFileSync(`${contextsDir}/${dir}/${file}`));
-  const url = `${baseUrl}${dir}/${file}`;
-  jdl.addStatic(url, context);
+  const oldUrl = `https://contexts.vcplayground.org/examples/${dir}/${file}`;
+  jdl.addStatic(oldUrl, context);
+  const newUrl = `https://examples.vcplayground.org/contexts/${dir}/${file}`;
+  jdl.addStatic(newUrl, context);
 });
 jdl.setProtocolHandler({protocol: 'https',
   handler: {
