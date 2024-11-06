@@ -1,8 +1,0 @@
-{
-  "@context": {
-    "renderMethod": {
-      "@id": "https://www.w3.org/2018/credentials#renderMethod",
-      "@type": "@id"
-    }
-  }
-}
