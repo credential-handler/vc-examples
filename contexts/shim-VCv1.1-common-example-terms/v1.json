@@ -1,8 +1,12 @@
 {
   "@context": {
+    "@protected": true,
     "name": "https://schema.org/name",
     "description": "https://schema.org/description",
-    "image": "https://schema.org/image",
+    "image": {
+      "@id": "https://schema.org/image",
+      "@type": "@id"
+    },
     "renderMethod": {
       "@id": "https://www.w3.org/2018/credentials#renderMethod",
       "@type": "@id"
