@@ -1,9 +1,12 @@
 {
   "@context": {
     "@protected": true,
-    "confidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/vocab#confidenceMethod",
+    "confidenceMethod": {
+      "@id": "https://www.w3.org/2018/credentials#confidenceMethod",
+      "@type": "@id"
+    },
 
-    "ConfidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/vocab#ConfidenceMethod",
+    "ConfidenceMethod": "https://www.w3.org/2018/credentials#ConfidenceMethod",
     "DidAuthnConfidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/vocab#DidAuthnConfidenceMethod"
   }
 }
