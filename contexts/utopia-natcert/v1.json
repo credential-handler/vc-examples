@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "@protected": true,
+    "confidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/v1.json#confidenceMethod",
+
+    "ConfidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/v1.json#ConfidenceMethod",
+    "DidAuthnConfidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/v1.json#DidAuthnConfidenceMethod"
+  }
+}
