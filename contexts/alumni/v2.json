@@ -10,6 +10,6 @@
       "@type": "@id"
     },
 
-    "AlumniCredential": "https://contexts.vcplayground.org/examples/alumni/vocab#AlumniCredential"
+    "AlumniCredential": "https://examples.vcplayground.org/contexts/alumni/vocab#AlumniCredential"
   }
 }
