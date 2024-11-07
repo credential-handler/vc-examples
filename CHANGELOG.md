@@ -1,6 +1,15 @@
 # vc-examples Changelog
 
-## 6.12.1 - 2024-11-xx
+## 6.13.0 - 2024-11-xx
+
+### Changed
+- Removed all uses of `https://www.w3.org/ns/credentials/examples/v2` context.
+- Defined any missing term definitions in local context definitions if standard
+  contexts did not exist.
+- Created two shim contexts for commonly used terms absent from the VC v1.1
+  context.
+- All credentials now point to their example contexts at
+  `https://examples.vcplayground.org/contexts/` based URLs.
 
 ### Fixed
 - Fix change from `naturalizedOn` to `ceremonyDate` in natcert-vc-v2 SVG.
