@@ -1,6 +1,6 @@
 # vc-examples Changelog
 
-## 6.13.0 - 2024-11-xx
+## 6.13.0 - 2024-11-08
 
 ### Changed
 - Removed all uses of `https://www.w3.org/ns/credentials/examples/v2` context.
