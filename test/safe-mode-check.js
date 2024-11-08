@@ -36,15 +36,19 @@ jdl.setProtocolHandler({protocol: 'https',
 const loader = jdl.build();
 jsonld.documentLoader = loader;
 
+let failure = false;
 const credentialPaths = await glob([`${credentialsDir}/**/credential.json`]);
-credentialPaths.forEach(async credentialPath => {
-  const credential = JSON.parse(await fs.readFileSync(credentialPath));
+await Promise.all(credentialPaths.map(async credentialPath => {
+  const credential = JSON.parse(await fs.promises.readFile(credentialPath));
   try {
     await jsonld.expand(credential, {safe: true});
-    console.log('👍 All terms correctly defined in',
-      credentialPath);
+    console.log('👍 All terms correctly defined in', credentialPath);
   } catch(err) {
     console.log('😢 Errors found in', credentialPath);
     console.dir(err, {depth: 5});
+    failure = true;
   }
-});
+}));
+if(failure) {
+  process.exit(1);
+}
