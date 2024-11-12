@@ -1,5 +1,10 @@
 # vc-examples Changelog
 
+## x.x.x - 2024-mm-dd
+
+### Added
+- Add `extract-contexts.js` script for extracting context URLs used in examples.
+
 ## 6.13.0 - 2024-11-08
 
 ### Changed
