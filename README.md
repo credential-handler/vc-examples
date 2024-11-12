@@ -109,6 +109,15 @@ import {credentialsDir} from '@credential-handler/vc-examples';
 import {contextsDir} from '@credential-handler/vc-examples';
 ```
 
+## Tools
+
+Use the `extract-contexts.js` script to generate an array of context URLs used
+in by these examples.
+
+```sh
+$ node extract-contexts.js
+```
+
 ## Contribute
 
 See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
