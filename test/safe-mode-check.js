@@ -7,27 +7,17 @@ import {JsonLdDocumentLoader} from 'jsonld-document-loader';
 
 const jdl = new JsonLdDocumentLoader();
 
-// Loop all local context files and add them as static contexts at the base URL
-const paths = (await glob([`${contextsDir}/**/*.json`],
-  {stat: true, withFileTypes: true}))
-  .map(path => path.fullpath());
-
-const pathParts = paths.map(path => {
-  const parts = path.split('/');
-  return [parts[parts.length - 2], parts[parts.length - 1]];
-});
-
-pathParts.forEach(([dir, file]) => {
-  const context = JSON.parse(
-    fs.readFileSync(`${contextsDir}/${dir}/${file}`));
-  const oldUrl = `https://contexts.vcplayground.org/examples/${dir}/${file}`;
-  jdl.addStatic(oldUrl, context);
-  const newUrl = `https://examples.vcplayground.org/contexts/${dir}/${file}`;
-  jdl.addStatic(newUrl, context);
-});
 jdl.setProtocolHandler({protocol: 'https',
   handler: {
     async get({url}) {
+      if(url.startsWith('https://examples.vcplayground.org/contexts/')) {
+        const regex =
+          /https\:\/\/examples\.vcplayground\.org\/contexts\/(.*)\/(.*)$/;
+        const [, dir, file] = url.match(regex);
+        const context = JSON.parse(
+          fs.readFileSync(`${contextsDir}/${dir}/${file}`));
+        jdl.addStatic(url, context);
+      }
       return EleventyFetch(url, {duration: '1d', type: 'json'});
     }
   }});
