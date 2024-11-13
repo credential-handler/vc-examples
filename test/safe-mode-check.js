@@ -7,6 +7,8 @@ import {JsonLdDocumentLoader} from 'jsonld-document-loader';
 
 const jdl = new JsonLdDocumentLoader();
 
+const contextUrls = new Set();
+
 jdl.setProtocolHandler({protocol: 'https',
   handler: {
     async get({url}) {
@@ -18,6 +20,7 @@ jdl.setProtocolHandler({protocol: 'https',
           fs.readFileSync(`${contextsDir}/${dir}/${file}`));
         jdl.addStatic(url, context);
       }
+      contextUrls.add(url);
       return EleventyFetch(url, {duration: '1d', type: 'json'});
     }
   }});
@@ -37,6 +40,10 @@ await Promise.all(credentialPaths.map(async credentialPath => {
     failure = true;
   }
 }));
+
+console.log('\nContexts used:');
+console.dir([...contextUrls].sort());
+
 if(failure) {
   process.exit(1);
 }
