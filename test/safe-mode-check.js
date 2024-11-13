@@ -7,6 +7,7 @@ import {JsonLdDocumentLoader} from 'jsonld-document-loader';
 
 const jdl = new JsonLdDocumentLoader();
 
+// collection to track all loaded contexts
 const contextUrls = new Set();
 
 jdl.setProtocolHandler({protocol: 'https',
