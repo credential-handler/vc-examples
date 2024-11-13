@@ -6,6 +6,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "check": "node test/safe-mode-check.js",
+    "extract": "node test/safe-mode-check.js extract",
     "publish": "mkdir _site/ && cp -r contexts/ _site/ && cp -r credentials/ _site/",
     "test": "npm run lint && npm run test-node",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 10000 test/*.spec.js",
