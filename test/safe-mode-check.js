@@ -1,9 +1,14 @@
+#!/usr/bin/env node
+
 import {contextsDir, credentialsDir} from '../lib/index.js';
 import EleventyFetch from '@11ty/eleventy-fetch';
 import fs from 'node:fs';
 import {glob} from 'glob';
 import jsonld from 'jsonld';
 import {JsonLdDocumentLoader} from 'jsonld-document-loader';
+
+// Pass in `extract` to get context list instead of safe mode check results
+const method = process.argv.at(2);
 
 const jdl = new JsonLdDocumentLoader();
 
@@ -34,17 +39,22 @@ await Promise.all(credentialPaths.map(async credentialPath => {
   const credential = JSON.parse(await fs.promises.readFile(credentialPath));
   try {
     await jsonld.expand(credential, {safe: true});
-    console.log('👍 All terms correctly defined in', credentialPath);
+    if(method !== 'extract') {
+      console.log('👍 All terms correctly defined in', credentialPath);
+    }
   } catch(err) {
-    console.log('😢 Errors found in', credentialPath);
+    if(method !== 'extract') {
+      console.log('😢 Errors found in', credentialPath);
+    }
     console.dir(err, {depth: 5});
     failure = true;
   }
 }));
 
-console.log('\nContexts used:');
-console.dir([...contextUrls].sort());
-
 if(failure) {
   process.exit(1);
+}
+
+if(method === 'extract') {
+  console.dir([...contextUrls].sort());
 }
