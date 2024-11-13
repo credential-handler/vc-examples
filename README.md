@@ -111,11 +111,11 @@ import {contextsDir} from '@credential-handler/vc-examples';
 
 ## Tools
 
-Use the `extract-contexts.js` script to generate an array of context URLs used
-in by these examples.
+To generate a JSON array of context URLs used in these examples, run the
+following command:
 
 ```sh
-$ node extract-contexts.js
+$ npm -s run extract
 ```
 
 ## Contribute
