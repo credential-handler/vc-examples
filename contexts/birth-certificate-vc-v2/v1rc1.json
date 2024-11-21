@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "BirthCertificateCredential": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#BirthCertificateCredential",
+    "BirthCertificate": {
+      "@id": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#BirthCertificate",
+      "@protected": true,
+      "@context": {
+        "identifier": "http://schema.org/identifier",
+        "children": "http://schema.org/children",
+        "parent": "http://schema.org/parent",
+        "certifyingAuthority": {
+          "@id": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#certifyingAuthority",
+          "@type": "@id"
+        },
+        "registrar": {
+          "@id": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#registrar",
+          "@type": "@id"
+        }
+      }
+    },
+    "Person": {
+      "@id": "http://schema.org/Person",
+      "@type": "@id"
+    },
+    "givenName": "http://schema.org/givenName",
+    "additionalName": "http://schema.org/additionalName",
+    "familyName": "http://schema.org/familyName",
+    "gender": "http://schema.org/gender",
+    "birthDate": "http://schema.org/birthDate",
+    "birthPlace": "http://schema.org/birthPlace",
+    "roleName": "http://schema.org/roleName",
+    "jobTitle": "http://schema.org/jobTitle",
+    "Organization": {
+      "@id": "http://schema.org/Organization",
+      "@type": "@id"
+    }
+  }
+}
