@@ -1,0 +1,28 @@
+vocab:
+  id: birth-certificate-vc-v2
+  value: https://examples.vcplayground.org/vocabs/birth-certificate-vc-v2
+
+ontology:
+  - property: dc:title
+    value: Birth Certificate Vocabulary
+
+  - property: dc:description
+    value: Vocabulary defining Birth Certificate related classes and properties.
+
+class:
+  - id: BirthCertificateCredential
+    label: Birth Certificate Credential
+    comment: A credential containing details on the certification of a birth.
+
+  - id: BirthCertificate
+    label: Birth Certificate
+    comment: Details on the certification of a birth.
+
+property:
+  - id: certifyingAuthority
+    label: Certifying Authority
+    comment: The entity which certified the birth.
+
+  - id: registrar
+    label: Registrar
+    comment: The entity which registered the certification of the birth.
