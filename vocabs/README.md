@@ -8,7 +8,7 @@ Consequently, the URI's of all these terms are subject to change without notice.
 
 ## Usage
 
-Install [yml2vocab](https://github/w3c/yml2vocab) and use it to generate the
+Install [yml2vocab](https://github.com/w3c/yml2vocab) and use it to generate the
 HTML and Turtle vocabulary files for reference or use in other tooling.
 
 ```sh
