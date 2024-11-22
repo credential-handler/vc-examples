@@ -56,5 +56,5 @@ if(failure) {
 }
 
 if(method === 'extract') {
-  console.dir([...contextUrls].sort());
+  console.log(JSON.stringify([...contextUrls].sort(), null, 2));
 }
