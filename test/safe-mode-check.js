@@ -18,6 +18,7 @@ const contextUrls = new Set();
 jdl.setProtocolHandler({protocol: 'https',
   handler: {
     async get({url}) {
+      contextUrls.add(url);
       if(url.startsWith('https://examples.vcplayground.org/contexts/')) {
         const regex =
           /https\:\/\/examples\.vcplayground\.org\/contexts\/(.*)\/(.*)$/;
@@ -25,8 +26,8 @@ jdl.setProtocolHandler({protocol: 'https',
         const context = JSON.parse(
           fs.readFileSync(`${contextsDir}/${dir}/${file}`));
         jdl.addStatic(url, context);
+        return context;
       }
-      contextUrls.add(url);
       return EleventyFetch(url, {duration: '1d', type: 'json'});
     }
   }});
