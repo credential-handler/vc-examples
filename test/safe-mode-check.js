@@ -15,7 +15,8 @@ const jdl = new JsonLdDocumentLoader();
 // collection to track all loaded contexts
 const contextUrls = new Set();
 
-jdl.setProtocolHandler({protocol: 'https',
+jdl.setProtocolHandler({
+  protocol: 'https',
   handler: {
     async get({url}) {
       contextUrls.add(url);
