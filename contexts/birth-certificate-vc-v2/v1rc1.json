@@ -1,38 +1,46 @@
 {
   "@context": {
-    "BirthCertificateCredential": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#BirthCertificateCredential",
+    "@protected": true,
+
+    "image": {"@id": "https://schema.org/image", "@type": "@id"},
+
+    "BirthCertificateCredential": "https://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#BirthCertificateCredential",
+
     "BirthCertificate": {
-      "@id": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#BirthCertificate",
+      "@id": "https://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#BirthCertificate",
       "@protected": true,
       "@context": {
-        "identifier": "http://schema.org/identifier",
-        "children": "http://schema.org/children",
-        "parent": "http://schema.org/parent",
+        "identifier": "https://schema.org/identifier",
+        "children": "https://schema.org/children",
+        "parent": "https://schema.org/parent",
         "certifyingAuthority": {
-          "@id": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#certifyingAuthority",
+          "@id": "https://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#certifyingAuthority",
           "@type": "@id"
         },
         "registrar": {
-          "@id": "http://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#registrar",
+          "@id": "https://examples.vcplayground.org/vocabs/birth-certificate-vc-v2#registrar",
           "@type": "@id"
         }
       }
     },
-    "Person": {
-      "@id": "http://schema.org/Person",
+
+    "Organization": {
+      "@id": "https://schema.org/Organization",
       "@type": "@id"
     },
-    "givenName": "http://schema.org/givenName",
-    "additionalName": "http://schema.org/additionalName",
-    "familyName": "http://schema.org/familyName",
-    "gender": "http://schema.org/gender",
-    "birthDate": "http://schema.org/birthDate",
-    "birthPlace": "http://schema.org/birthPlace",
-    "roleName": "http://schema.org/roleName",
-    "jobTitle": "http://schema.org/jobTitle",
-    "Organization": {
-      "@id": "http://schema.org/Organization",
+
+    "Person": {
+      "@id": "https://schema.org/Person",
       "@type": "@id"
-    }
+    },
+
+    "givenName": "https://schema.org/givenName",
+    "additionalName": "https://schema.org/additionalName",
+    "familyName": "https://schema.org/familyName",
+    "gender": "https://schema.org/gender",
+    "birthDate": "https://schema.org/birthDate",
+    "birthPlace": "https://schema.org/birthPlace",
+    "roleName": "https://schema.org/roleName",
+    "jobTitle": "https://schema.org/jobTitle"
   }
 }
