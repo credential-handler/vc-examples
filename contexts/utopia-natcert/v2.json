@@ -16,6 +16,6 @@
         }
       }
     },
-    "DidAuthnConfidenceMethod": "https://examples.vcplayground.org/contexts/utopia-natcert/vocab#DidAuthnConfidenceMethod"
+    "DidAuthnConfidenceMethod": "https://examples.vcplayground.org/vocabs/utopia-natcert#DidAuthnConfidenceMethod"
   }
 }
