@@ -1,9 +1,10 @@
 # vc-examples Changelog
 
-## x.x.x - 2024-mm-dd
+## 6.14.0 - 2025-03-xx
 
 ### Added
 - Add `npm -s run extract` script for extracting context URLs used in examples.
+- Add First Responder v2rc1 context.
 
 ## 6.13.0 - 2024-11-08
 
