@@ -47,10 +47,5 @@
   "bugs": {
     "url": "https://github.com/credential-handler/vc-examples/issues"
   },
-  "homepage": "https://github.com/credential-handler/vc-examples#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "canonify": "^2.1.1",
-    "wrangler": "^4.31.0"
-  }
+  "homepage": "https://github.com/credential-handler/vc-examples#readme"
 }
