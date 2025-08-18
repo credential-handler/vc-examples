@@ -18,17 +18,17 @@
     "lib/*.js"
   ],
   "devDependencies": {
-    "@11ty/eleventy-fetch": "^4.0.1",
-    "chai": "^4.3.7",
-    "cross-env": "^7.0.3",
+    "@11ty/eleventy-fetch": "^5.1.0",
+    "chai": "^5.3.1",
+    "cross-env": "^10.0.0",
     "eslint": "^8.34.0",
     "eslint-config-digitalbazaar": "^4.2.0",
     "eslint-plugin-jsdoc": "^40.0.0",
     "eslint-plugin-unicorn": "^45.0.2",
-    "glob": "^11.0.0",
-    "jsonld": "^8.3.2",
-    "jsonld-document-loader": "^2.2.0",
-    "mocha": "^10.2.0"
+    "glob": "^11.0.3",
+    "jsonld": "^8.3.3",
+    "jsonld-document-loader": "^2.3.0",
+    "mocha": "^11.7.1"
   },
   "repository": {
     "type": "git",

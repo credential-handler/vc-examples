@@ -1,8 +1,8 @@
 /*!
  * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
  */
+import * as chai from 'chai';
 import {contextsDir, credentialsDir} from '../lib/index.js';
-import chai from 'chai';
 import fs from 'node:fs';
 
 const should = chai.should();
