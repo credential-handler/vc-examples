@@ -135,6 +135,25 @@ used in the creation of these URLs, but the above absolute path would be
 consistent across domain names which implemented RFC6920 + JCS for their context
 URLs.
 
+### `Repr-Digest`
+
+In addition to the above URLs,
+[`Repr-Digest`](https://datatracker.ietf.org/doc/html/rfc9530#name-the-repr-digest-field)
+fields are provided in the responses to the human-friendly named URLs, such that
+the hash can be compared with cashes, stored copies, etc. For example:
+
+```http
+HEAD /contexts/utopia-natcert/v2.json HTTP/1.1
+Host: examples.vcplayground.org
+```
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/ld+json
+Repr-Digest: sha-256=deb95693d486afdb1909289e399d398a4c8bceeea12f405c32359ea81c98b48a
+Link: </.well-known/ni/sha-256/deb95693d486afdb1909289e399d398a4c8bceeea12f405c32359ea81c98b48a>; rel="alternate"; type="application/ld+json"
+```
+
 ## Contribute
 
 See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!

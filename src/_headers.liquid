@@ -1,0 +1,10 @@
+---
+permalink: _headers
+---
+
+{%- for context in contexts %}
+{{ context.path }}
+  Repr-Digest: sha-256={{ context.hash }}
+  Content-Type: application/ld+json
+  Link: </.well-known/ni/sha-256/{{ context.hash }}>; rel="alternate"; type="application/ld+json"
+{%-  endfor -%}
