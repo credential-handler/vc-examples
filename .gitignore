@@ -12,5 +12,3 @@ _site/
 vocabs/**/vocabulary.*
 !vocabs/**/vocabulary.yml
 .DS_Store
-credentials/.DS_Store
-contexts/.DS_Store
