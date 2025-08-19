@@ -118,6 +118,17 @@ following command:
 $ npm -s run extract
 ```
 
+To generate a dump of JSON objects (one per image) describing each image as a
+[`relatedResource`](https://www.w3.org/TR/vc-data-model-2.0/#integrity-of-related-resources),
+run the following command:
+
+```sh
+$ node related-resouces.js
+```
+
+The intent is for these objects to be used (where needed) in VCs or other
+documents where their `digestMultibase` values are needed.
+
 ## Hash-based URLs for contexts
 
 This is an experimental feature. We have provided redirects using identifiers
