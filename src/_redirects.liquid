@@ -1,0 +1,6 @@
+---
+permalink: _redirects
+---
+{%- for context in contexts -%}
+/.well-known/ni/sha-256/{{context.hash}} {{context.path}}
+{% endfor -%}
