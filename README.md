@@ -118,6 +118,23 @@ following command:
 $ npm -s run extract
 ```
 
+## Hash-based URLs for contexts
+
+This is an experimental feature. We have provided redirects using identifiers
+created from the SHA-256 hashed canonicalized JSON (JCS) of the JSON-LD contexts
+in this repository at their
+[Naming things with Hashes (RFC6920)](https://www.rfc-editor.org/rfc/rfc6920.html)
+`.well-known` URLs. For example:
+
+```
+/.well-known/ni/sha-256/deb95693d486afdb1909289e399d398a4c8bceeea12f405c32359ea81c98b48a /contexts/utopia-natcert/v2.json
+```
+
+Sadly, RFC6920 does not currently support a method for expressing that JCS was
+used in the creation of these URLs, but the above absolute path would be
+consistent across domain names which implemented RFC6920 + JCS for their context
+URLs.
+
 ## Contribute
 
 See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
