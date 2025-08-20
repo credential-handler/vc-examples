@@ -9,7 +9,10 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('credentials/');
   return {
     dir: {
-      input: 'src/'
+      input: 'src/',
+
+      // relative to the input directory
+      layouts: '_layouts'
     }
   };
 }
