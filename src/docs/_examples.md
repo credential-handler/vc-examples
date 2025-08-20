@@ -8,11 +8,11 @@ permalink: /docs/{{ example }}/
 
 [< Back](/docs/)
 
-# {{ example }}
-
-{% comment %}
-Render example README here
-{% endcomment %}
+{% if examples[example].readme.length > 0 %}
+{{ examples[example].readme | renderContent }}
+{% else %}
+# {{ example | replace: '-', ' ' |  capitalize }}
+{% endif %}
 
 ## Credential
 

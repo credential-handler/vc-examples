@@ -4,7 +4,11 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+import {RenderPlugin} from '@11ty/eleventy';
+
 export default async function(eleventyConfig) {
+  eleventyConfig.addPlugin(RenderPlugin);
+
   eleventyConfig.addPassthroughCopy('contexts/');
   eleventyConfig.addPassthroughCopy('credentials/');
   return {

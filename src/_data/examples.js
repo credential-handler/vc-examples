@@ -21,13 +21,17 @@ const examples = {};
 for(const dir of directories) {
   const credentialPath = path.join(dir, 'credential.json');
   const queriesPath = path.join(dir, 'queries.json');
+  const readmePath = path.join(dir, 'README.md');
   // TODO: gather images also
   const credential = JSON.parse(fs.readFileSync(credentialPath, 'utf8'));
   const queries = JSON.parse(fs.readFileSync(queriesPath, 'utf8'));
+  const readme = fs.existsSync(readmePath) ?
+    fs.readFileSync(readmePath, 'utf8') : '';
   const dirname = path.basename(dir);
   examples[dirname] = {
     credential,
-    queries
+    queries,
+    readme
   };
 }
 
