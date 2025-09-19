@@ -1,12 +1,8 @@
-import {fileURLToPath} from 'url';
 import fs from 'fs';
 import path from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const svgPath = path.join(__dirname, 'birthcert.svg');
-const jsonPath = path.join(__dirname, 'credential.json');
+const svgPath = path.join(import.meta.dirname, 'birthcert.svg');
+const jsonPath = path.join(import.meta.dirname, 'credential.json');
 
 const svgContent = fs.readFileSync(svgPath, 'utf8');
 // put SVG on a single line and remove excess whitespace
