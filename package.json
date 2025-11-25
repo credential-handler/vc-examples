@@ -7,8 +7,9 @@
   "scripts": {
     "check": "node test/safe-mode-check.js",
     "extract": "node test/safe-mode-check.js extract",
-    "publish": "eleventy",
+    "build": "eleventy",
     "serve": "wrangler pages dev _site/ --compatibility-date=2025-04-02",
+    "watch": "eleventy --watch",
     "test": "npm run lint && npm run test-node",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 10000 test/*.spec.js",
     "lint": "eslint ."
@@ -31,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/credential-handler/vc-examples"
+    "url": "git+https://github.com/credential-handler/vc-examples.git"
   },
   "engines": {
     "node": ">=18"
