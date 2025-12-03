@@ -1,6 +1,10 @@
 ---
 permalink: _redirects
 ---
+/credentials/coupon/* /credentials/coupon-vc-v2/:splat 301
+/credentials/fema-ics-100/* /credentials/fema-ics-100-vc-v2/:splat 301
+/credentials/loyalty-card/* /credentials/loyalty-card-vc-v2/:splat 301
+
 {%- for context in contexts -%}
 /.well-known/ni/sha-256/{{context.hash}} {{context.path}}
 {% endfor -%}
