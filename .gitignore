@@ -7,7 +7,6 @@
 TAGS
 dist
 node_modules
-package-lock.json
 _site/
 vocabs/**/vocabulary.*
 !vocabs/**/vocabulary.yml
