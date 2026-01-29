@@ -22,13 +22,13 @@
   "devDependencies": {
     "@11ty/eleventy-fetch": "^5.1.0",
     "@digitalbazaar/eslint-config": "^7.0.1",
-    "chai": "^5.3.1",
+    "chai": "^6.2.2",
     "cross-env": "^10.0.0",
     "eslint": "^9.39.2",
     "glob": "^11.0.3",
-    "jsonld": "^8.3.3",
+    "jsonld": "^9.0.0",
     "jsonld-document-loader": "^2.3.0",
-    "mocha": "^11.7.1"
+    "mocha": "^11.7.5"
   },
   "repository": {
     "type": "git",
