@@ -34,7 +34,7 @@ export async function generateRelatedResourceEntry(imagePath) {
   const relatedResource = {
     id: `https://examples.vcplayground.org/${imagePath}`,
     digestMultibase,
-    mediaType,
+    mediaType
   };
 
   return relatedResource;

@@ -22,7 +22,7 @@ jdl.setProtocolHandler({
       contextUrls.add(url);
       if(url.startsWith('https://examples.vcplayground.org/contexts/')) {
         const regex =
-          /https\:\/\/examples\.vcplayground\.org\/contexts\/(.*)\/(.*)$/;
+          /https:\/\/examples\.vcplayground\.org\/contexts\/(.*)\/(.*)$/;
         const [, dir, file] = url.match(regex);
         const context = JSON.parse(
           fs.readFileSync(`${contextsDir}/${dir}/${file}`));
