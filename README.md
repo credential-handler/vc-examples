@@ -57,6 +57,17 @@ All local example context files are added as static contexts mapped to their
 future publication URLs via
 [jsonld-document-loader](https://github.com/digitalbazaar/jsonld-document-loader).
 
+To host the generated examples index locally for testing, run:
+
+```sh
+npm run watch # in one shell environment
+npm run serve # in another shell environment
+```
+
+The `watch` command will monitor file changes and rebuild the site via Eleventy.
+The `serve` command will host the generated site at `http://localhost:8788/` and
+also takes the `_headers` and `_redirects` files into account.
+
 ### Production
 
 The production environment is managed via [Cloudflare Pages](https://pages.cloudflare.com/)
