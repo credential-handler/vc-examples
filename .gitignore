@@ -12,3 +12,4 @@ _site/
 vocabs/**/vocabulary.*
 !vocabs/**/vocabulary.yml
 .DS_Store
+.wrangler/
