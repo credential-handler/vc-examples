@@ -1,0 +1,6 @@
+name = "vc-examples"
+pages_build_output_dir = "_site"
+compatibility_date = "2025-08-15"
+
+[env.production.vars]
+NODE_ENV = "production"

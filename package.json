@@ -8,7 +8,7 @@
     "check": "node test/safe-mode-check.js",
     "extract": "node test/safe-mode-check.js extract",
     "build": "eleventy",
-    "serve": "wrangler pages dev _site/ --compatibility-date=2025-04-02",
+    "serve": "wrangler pages dev _site/",
     "watch": "eleventy --watch",
     "test": "npm run lint && npm run test-node",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 10000 test/*.spec.js",
