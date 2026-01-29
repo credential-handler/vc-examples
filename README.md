@@ -57,6 +57,30 @@ All local example context files are added as static contexts mapped to their
 future publication URLs via
 [jsonld-document-loader](https://github.com/digitalbazaar/jsonld-document-loader).
 
+### Production
+
+The production environment is managed via [Cloudflare Pages](https://pages.cloudflare.com/)
+and managed via the [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/).
+
+To publish into production--even on a preview branch, run:
+
+```sh
+npm run delpoy
+```
+
+The `wrangler.toml` file contains the configuration for the Cloudflare Pages
+deployment and sets the `NODE_ENV` environment variable to `production` for
+production.
+
+A Linked Data Platform (LDP) Basic Container document of the contents of the
+`./credentials/` directory is generated and uses the `NODE_ENV` variable to
+generate the absolute URLs in the JSON-LD.
+
+The production LDP index is at
+`https://examples.vcplayground.org/credentials/index.jsonld`. It is primarily
+intended for use by [VC Viewer](https://github.com/digitalbazaar/vc-viewer), but
+may be useful for other applications as well.
+
 ## Usage
 
 ### Add / Update a Verifiable Credential
