@@ -1,3 +1,31 @@
+const baseURL = 'http://localhost:8788/credentials/';
+const ldpBasicContainer = {
+  '@context': [{
+    '@version': 1.1,
+    Container: 'http://www.w3.org/ns/ldp#Container',
+    BasicContainer: 'http://www.w3.org/ns/ldp#BasicContainer',
+
+    title: 'http://purl.org/dc/terms/title',
+    contains: {
+      '@id': 'http://www.w3.org/ns/ldp#contains',
+      '@type': '@id',
+      '@container': '@set'
+    },
+    files: {
+      '@id': 'http://www.w3.org/ns/ldp#contains',
+      '@type': '@id',
+      '@container': '@index'
+    }
+  },
+  {
+    '@base': baseURL
+  }],
+  '@id': '',
+  '@type': [ 'Container', 'BasicContainer' ],
+  title: 'VC Examples',
+  contains: []
+};
+
 class Index {
   data() {
     return {
@@ -7,14 +35,20 @@ class Index {
   }
 
   render({examples}) {
-    const rv = Object.keys(examples).map(example => {
-      return [example, {
-        credential: `${example}/credential.json`,
-        queries: `${example}/queries.json`,
-        image: `${example}/image.png`
-      }];
+    const dirs = Object.keys(examples).map(example => {
+      return {
+        '@id': `${baseURL}${example}/`,
+        '@type': 'BasicContainer',
+        title: example,
+        files: {
+          credential: `${baseURL}${example}/credential.json`,
+          queries: `${baseURL}${example}/queries.json`,
+          image: `${baseURL}${example}/image.png`
+        }
+      };
     });
-    return JSON.stringify(Object.fromEntries(rv), null, 2);
+    ldpBasicContainer.contains = dirs;
+    return JSON.stringify(ldpBasicContainer, null, 2);
   }
 }
 
