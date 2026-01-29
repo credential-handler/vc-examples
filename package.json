@@ -5,9 +5,10 @@
   "type": "module",
   "main": "./lib/index.js",
   "scripts": {
-    "check": "node test/safe-mode-check.js",
-    "extract": "node test/safe-mode-check.js extract",
     "build": "eleventy",
+    "check": "node test/safe-mode-check.js",
+    "deploy": "wrangler pages deploy _site/",
+    "extract": "node test/safe-mode-check.js extract",
     "serve": "wrangler pages dev _site/",
     "watch": "eleventy --watch",
     "test": "npm run lint && npm run test-node",
