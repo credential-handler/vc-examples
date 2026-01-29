@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 
 const svgPath = path.join(import.meta.dirname, 'birthcert.svg');
 const jsonPath = path.join(import.meta.dirname, 'credential.json');
