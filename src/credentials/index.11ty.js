@@ -1,4 +1,6 @@
-const baseURL = 'http://localhost:8788/credentials/';
+const baseURL = process.env.NODE_ENV === 'production' ?
+  'https://examples.vcplayground.org/credentials/' :
+  'http://localhost:8788/credentials/';
 const ldpBasicContainer = {
   '@context': [{
     '@version': 1.1,
