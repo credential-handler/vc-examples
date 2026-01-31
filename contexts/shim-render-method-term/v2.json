@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "@protected": true,
+    "id": "@id",
+    "type": "@type",
+    "SvgRenderingTemplate2023": {
+      "@id": "https://w3id.org/vc/render-method#SvgRenderingTemplate2023",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "css3MediaQuery": "https://w3id.org/vc/render-method#css3MediaQuery",
+        "digestMultibase": {
+          "@id": "https://w3id.org/security#digestMultibase",
+          "@type": "https://w3id.org/security#multibase"
+        },
+        "name": "https://schema.org/name"
+      }
+    },
+    "SvgRenderingTemplate2024": {
+      "@id": "https://w3id.org/vc/render-method#SvgRenderingTemplate2024",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "digestMultibase": {
+          "@id": "https://w3id.org/security#digestMultibase",
+          "@type": "https://w3id.org/security#multibase"
+        },
+        "mediaQuery": "https://w3id.org/vc/render-method#mediaQuery",
+        "mediaType": "https://schema.org/encodingFormat",
+        "name": "https://schema.org/name",
+        "template": "https://w3id.org/vc/render-method#template"
+      }
+    },
+    "TemplateRenderMethod": {
+      "@id": "https://w3id.org/vc/render-method#TemplateRenderMethod",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "description": "https://schema.org/description",
+        "name": "https://schema.org/name",
+        "renderEngine": "https://w3id.org/vc/render-method#renderEngine",
+        "renderProperty": {
+          "@id": "https://w3id.org/vc/render-method#renderProperty",
+          "@container": "@set"
+        },
+        "outputPreference": {
+          "@id": "https://w3id.org/vc/render-method#outputPreference",
+          "@context": {
+            "@protected": true,
+            "id": "@id",
+            "mode": {
+              "@id": "https://w3id.org/vc/render-method#mode",
+              "@container": "@set"
+            },
+            "mediaType": "https://schema.org/encodingFormat",
+            "style": {
+              "@id": "https://w3id.org/vc/render-method#style",
+              "@type": "@json"
+            }
+          }
+        },
+        "template": {
+          "@id": "https://w3id.org/vc/render-method#template",
+          "@type": "@id"
+        }
+      }
+    },
+    "NfcRenderingTemplate2024": {
+      "@id": "https://w3id.org/vc/render-method#NfcRenderingTemplate2024",
+      "@context": {
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "name": "https://schema.org/name",
+        "payload": "https://w3id.org/vc/render-method#payload"
+      }
+    }
+  }
+}
