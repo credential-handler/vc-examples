@@ -41,7 +41,7 @@
         "type": "@type",
         "description": "https://schema.org/description",
         "name": "https://schema.org/name",
-        "renderEngine": "https://w3id.org/vc/render-method#renderEngine",
+        "renderSuite": "https://w3id.org/vc/render-method#renderSuite",
         "renderProperty": {
           "@id": "https://w3id.org/vc/render-method#renderProperty",
           "@container": "@set"
