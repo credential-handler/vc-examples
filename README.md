@@ -88,7 +88,7 @@ A Linked Data Platform (LDP) Basic Container document of the contents of the
 generate the absolute URLs in the JSON-LD.
 
 The production LDP index is at
-`https://examples.vcplayground.org/credentials/index.jsonld`. It is primarily
+`https://examples.vcplayground.org/credentials/index.json`. It is primarily
 intended for use by [VC Viewer](https://github.com/digitalbazaar/vc-viewer), but
 may be useful for other applications as well.
 
