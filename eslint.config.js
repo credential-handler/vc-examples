@@ -5,6 +5,7 @@ export default [
   ...config,
   globalIgnores([
     '.wrangler/*',
-    '_site/'
+    '_site/',
+    'credentials/html-render-method-mustache/mustache.v4.2.0.js'
   ])
 ];
