@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const svgPath = path.join(import.meta.dirname, 'image.svg');
+const svgPath = path.join(import.meta.dirname, 'badge.svg');
 const jsonPath = path.join(import.meta.dirname, 'credential.json');
 
 const svgContent = fs.readFileSync(svgPath, 'utf8');
