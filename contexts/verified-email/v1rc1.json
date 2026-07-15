@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "VerifiedEmailCredential": "https://examples.vcplayground.org/contexts/verified-email/vocab#VerifiedEmailCredentials",
+    "email": "https://schema.org/email"
+  }
+}
