@@ -23,6 +23,7 @@
   "devDependencies": {
     "@11ty/eleventy-fetch": "^5.1.0",
     "@digitalbazaar/eslint-config": "^7.0.1",
+    "@digitalbazaar/vc-querybyexample": "github:digitalbazaar/vc-querybyexample",
     "chai": "^6.2.2",
     "cross-env": "^10.0.0",
     "eslint": "^9.39.2",
